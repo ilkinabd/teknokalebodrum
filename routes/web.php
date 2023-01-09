@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.products');
+Route::get('/urunler', function () {
+    return redirect('urunler/kale-kilit');
 });
+
+Route::get('/urunler/{slug}', [ProductsController::class, 'index']);
