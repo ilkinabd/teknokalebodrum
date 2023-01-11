@@ -4,7 +4,7 @@
 
 @section('breadcrumbs')
   <ol>
-    <li><a href="{{route('/')}}">Ana sayfa</a></li>
+    <li><a href="/">Ana sayfa</a></li>
     <li>Ürünler</li>
   </ol>
 @endsection
