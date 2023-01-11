@@ -1,6 +1,13 @@
 @extends('layouts.main')
 
 @section('title','Ürünler')
+
+@section('breadcrumbs')
+  <ol>
+    <li><a href="{{route('/')}}">Ana sayfa</a></li>
+    <li>Ürünler</li>
+  </ol>
+@endsection
 @php
   /**
    * @var $categories array
