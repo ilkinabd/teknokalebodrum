@@ -54,7 +54,7 @@
                       <a href="{{$image}}"
                          data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
                           class="bi bi-zoom-in"></i></a>
-                      <a href="project-details.html" title="More Details" class="details-link"><i
+                      <a href="javascript:void(0)" title="More Details" class="details-link"><i
                           class="bi bi-link-45deg"></i></a>
                     </div>
                   </div>
