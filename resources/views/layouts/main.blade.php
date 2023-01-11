@@ -116,7 +116,7 @@
         <!--          <li><a href="services.html">Hizmetlerimiz</a></li>-->
         <li><a href="/urunler" class="active">Ürünler</a></li>
         <li><a href="javascript:void(0);">Haberler</a></li>
-        <li class="dropdown"><a href="services.html"><span>Hizmetlerimiz</span> <i
+        <li class="dropdown"><a href="javascript:void(0)"><span>Hizmetlerimiz</span> <i
               class="bi bi-chevron-down dropdown-indicator"></i></a>
           <ul>
             <li><a href="javascript:void(0);">Hizmet 1</a></li>
