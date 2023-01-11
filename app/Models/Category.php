@@ -6,7 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
-    protected $table = 'categories';
+    protected $table   = 'categories';
+    protected $appends = ['descendants'];
+
+    private $descendants = [];
+
+    public function subcategories()
+    {
+        return $this->hasMany(Category::class, 'parent_id');
+    }
 
     public function parent()
     {
@@ -15,11 +23,43 @@ class Category extends Model
 
     public function children()
     {
-        return $this->hasMany(Category::class, 'parent_id');
+        return $this->subcategories()->with('children');
     }
 
-    public function childrenRecursive()
+    public function hasChildren()
     {
-        return $this->children()->with('childrenRecursive');
+        if ($this->children->count()) {
+            return true;
+        }
+
+        return false;
+    }
+
+    public function findDescendants(Category $category)
+    {
+        $this->descendants[] = $category->id;
+
+        if ($category->hasChildren()) {
+            foreach ($category->children as $child) {
+                $this->findDescendants($child);
+            }
+        }
+    }
+
+    public function getDescendants(Category $category)
+    {
+        $this->findDescendants($category);
+        return $this->descendants;
+    }
+
+    public function getDescendantsAttribute()
+    {
+        $this->findDescendants($this);
+        return $this->descendants;
+    }
+
+    public function products()
+    {
+        return $this->hasMany(Product::class, 'category_id');
     }
 }

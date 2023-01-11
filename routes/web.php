@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/urunler', function () {
-    return redirect('urunler/kale-kilit');
+    return redirect('urunler/silindirler');
 });
 
-Route::get('/urunler/{slug}', [ProductsController::class, 'index']);
+Route::get('/urunler/{slug}', [ProductsController::class, 'index'])->name('products');
