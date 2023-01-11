@@ -114,7 +114,7 @@
         <li><a href="{{route('home')}}">Ana sayfa</a></li>
         <li><a href="javascript:void(0);">Hakkımızda</a></li>
         <!--          <li><a href="services.html">Hizmetlerimiz</a></li>-->
-        <li><a href="/products" class="active">Ürünler</a></li>
+        <li><a href="/urunler" class="active">Ürünler</a></li>
         <li><a href="javascript:void(0);">Haberler</a></li>
         <li class="dropdown"><a href="services.html"><span>Hizmetlerimiz</span> <i
               class="bi bi-chevron-down dropdown-indicator"></i></a>
