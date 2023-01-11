@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return redirect('/urunler');
+})->name('home');
 Route::get('/urunler', function () {
     return redirect('urunler/silindirler');
 });

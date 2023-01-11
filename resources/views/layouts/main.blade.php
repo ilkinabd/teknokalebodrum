@@ -111,10 +111,10 @@
     <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a href="index.html">Ana sayfa</a></li>
+        <li><a href="{{route('home')}}">Ana sayfa</a></li>
         <li><a href="about.html">Hakkımızda</a></li>
         <!--          <li><a href="services.html">Hizmetlerimiz</a></li>-->
-        <li><a href="projects.html" class="active">Ürünler</a></li>
+        <li><a href="{{route('products')}}" class="active">Ürünler</a></li>
         <li><a href="blog.html">Haberler</a></li>
         <li class="dropdown"><a href="services.html"><span>Hizmetlerimiz</span> <i
               class="bi bi-chevron-down dropdown-indicator"></i></a>
