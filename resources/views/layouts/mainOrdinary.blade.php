@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{asset('storage/assets/img/favicon.png')}}" rel="icon">
-  <link href="{{asset('storage/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+  <link href="{{asset('storage/assets/img/favicon.ico')}}" rel="icon">
+  <link href="{{asset('storage/assets/img/favicon.ico')}}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,6 @@
   <link href="{{asset('storage/assets/vendor/aos/aos.css')}}" rel="stylesheet">
   <link href="{{asset('storage/assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
   <link href="{{asset('storage/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
-
   <!-- Template Main CSS File -->
   <link href="{{asset('storage/assets/css/main.css')}}" rel="stylesheet">
 
