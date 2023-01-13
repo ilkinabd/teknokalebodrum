@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ProductsController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,11 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return redirect('/urunler');
-})->name('home');
+Route::get('/', [PagesController::class, 'home'])->name('home');
 Route::get('/urunler', function () {
     return redirect('urunler/silindirler');
 });
-
 Route::get('/urunler/{slug}', [ProductsController::class, 'index'])->name('products');
