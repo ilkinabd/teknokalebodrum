@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PagesController::class, 'home'])->name('home');
-Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
+Route::get('/iletisim', [PagesController::class, 'contact'])->name('contact');
 Route::get('/urunler', function () {
     return redirect('urunler/silindirler');
 });
