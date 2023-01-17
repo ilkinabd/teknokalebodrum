@@ -35,6 +35,7 @@
       .accordion-category .list-group .list-group {
           margin-left: 16px;
       }
+
       .accordion-category .list-group-item-action:focus, .list-group-item-action:hover {
           color: var(--color-primary);
           text-decoration: none;
@@ -134,7 +135,7 @@
             <!--              <li><a href="#">Dropdown 4</a></li>-->
           </ul>
         </li>
-        <li><a href="javascript:void(0);">İletişim</a></li>
+        <li><a href="{{route('contact')}}">İletişim</a></li>
       </ul>
     </nav><!-- .navbar -->
 
@@ -149,8 +150,10 @@
       <div class="row justify-content-center">
         <div class="col-lg-6 text-center">
           <h2 data-aos="fade-down">Türkiye’nin ilk kilit <span>ihraç eden şirketi</span></h2>
-          <p data-aos="fade-up">Üretim, istihdam ve ihracat rakamlarının yanı sıra dünya pazarlarındaki rekabet gücü ile de
-            Türkiye ekonomisinin güçlü oyuncusu olan Kale Kilit’in temelleri, 1953 yılında Sadık Özgür tarafından atıldı.</p>
+          <p data-aos="fade-up">Üretim, istihdam ve ihracat rakamlarının yanı sıra dünya pazarlarındaki rekabet gücü ile
+            de
+            Türkiye ekonomisinin güçlü oyuncusu olan Kale Kilit’in temelleri, 1953 yılında Sadık Özgür tarafından
+            atıldı.</p>
           <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">İletişime Geç</a>
         </div>
       </div>

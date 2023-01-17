@@ -11,10 +11,16 @@ class PagesController extends Controller
 {
     public function home(): Factory|View|Application
     {
-        $pageSlider = Slider::where('page', '=','home')->first(['slides'])->toArray();
+        $pageSlider = Slider::where('page', '=', 'home')->first(['slides'])->toArray();
         $slides     = json_decode($pageSlider['slides'], true);
         return view('pages.home', [
             'slides' => $slides
+        ]);
+    }
+
+    public function contact(): Factory|View|Application
+    {
+        return view('pages.contact', [
         ]);
     }
 }

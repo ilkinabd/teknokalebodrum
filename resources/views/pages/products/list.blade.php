@@ -1,19 +1,18 @@
 @extends('layouts.mainOrdinary')
-
-@section('title','Ürünler')
-
-@section('breadcrumbs')
-  <ol>
-    <li><a href="/">Ana sayfa</a></li>
-    <li>Ürünler</li>
-  </ol>
-@endsection
 @php
   /**
    * @var $categories array
    * @var $currentCategory array
    */
 @endphp
+@section('title',$currentCategory['title'])
+
+@section('breadcrumbs')
+  <ol>
+    <li><a href="/">Ana sayfa</a></li>
+    <li>{{$currentCategory['title']}}</li>
+  </ol>
+@endsection
 @section('content')
   <section id="projects" class="projects">
     <div class="container" data-aos="fade-up">
@@ -61,7 +60,10 @@
                       <a href="{{$image}}"
                          data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
                           class="bi bi-zoom-in"></i></a>
-                      <a href="javascript:void(0)" title="More Details" class="details-link"><i
+                      <a
+                        href="{{route('products.detail',['category'=>$currentCategory['slug'],'product'=>$product['slug']])}}"
+                        title="More Details"
+                        class="details-link"><i
                           class="bi bi-link-45deg"></i></a>
                     </div>
                   </div>

@@ -34,6 +34,7 @@
       .accordion-category .list-group .list-group {
           margin-left: 16px;
       }
+
       .accordion-category .list-group-item-action:focus, .list-group-item-action:hover {
           color: var(--color-primary);
           text-decoration: none;
@@ -91,6 +92,26 @@
       .accordion-category .list-group-item.list-group-item-action:not(.collapsed) .arrow {
           transform: var(--bs-accordion-btn-icon-transform);
       }
+
+      .product-view .current-image {
+          padding: 32px 0;
+      }
+
+      .product-view .img-thumbnail img {
+          width: 100px;
+      }
+
+      .product-view .thumb {
+          width: 100px;
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          padding: 2px;
+          border: 1px solid var(--bs-border-color);
+      }
+
   </style>
 </head>
 
@@ -133,7 +154,7 @@
             <!--              <li><a href="#">Dropdown 4</a></li>-->
           </ul>
         </li>
-        <li><a href="javascript:void(0);">İletişim</a></li>
+        <li><a href="{{route('contact')}}">İletişim</a></li>
       </ul>
     </nav><!-- .navbar -->
 
@@ -264,7 +285,7 @@
 
 <!-- Template Main JS File -->
 <script src="{{asset('storage/assets/js/main.js')}}"></script>
-
+@yield('scripts')
 </body>
 
 </html>
