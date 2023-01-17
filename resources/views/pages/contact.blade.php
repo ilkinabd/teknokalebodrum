@@ -6,7 +6,7 @@
   <ol>
     <li><a href="/">Ana sayfa</a></li>
     <li>
-      Contact
+      İletişim
     </li>
   </ol>
 @endsection
