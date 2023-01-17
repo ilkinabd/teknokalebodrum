@@ -1,6 +1,6 @@
 @extends('layouts.mainOrdinary')
 
-@section('title','Contact')
+@section('title','İletişim')
 
 @section('breadcrumbs')
   <ol>
