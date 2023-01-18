@@ -26,8 +26,8 @@
         <div class="col-lg-3 col-md-6">
           <div class="info-item d-flex flex-column justify-content-center align-items-center">
             <i class="bi bi-envelope"></i>
-            <h3>Email Us</h3>
-            <p>contact@example.com</p>
+            <h3>Email</h3>
+            <p>teknokalebodrum@gmail.com</p>
           </div>
         </div><!-- End Info Item -->
 
@@ -35,8 +35,7 @@
           <div class="info-item  d-flex flex-column justify-content-center align-items-center">
             <i class="bi bi-telephone"></i>
             <h3>Telefon</h3>
-            <p><a href="tel:+905524504809">+905524504809</a></p>
-            <p><a href="tel:+902526060615">+902526060615</a></p>
+            <p><a href="tel:+905524504809">+905524504809</a> , <a href="tel:+902526060615">+902526060615</a></p>
           </div>
         </div><!-- End Info Item -->
 
@@ -48,30 +47,30 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d473.40501569770464!2d27.40763421144538!3d37.041355534401404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14be6de6bb9530bb%3A0xc88514ea394682a8!2sTekno%20Kale%20Kilit%20Sistemleri%2C%20Bili%C5%9Fim%20ve%20G%C3%BCvenlik%20Teknolojileri!5e0!3m2!1str!2str!4v1674059187744!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div><!-- End Google Maps -->
 
-{{--        <div class="col-lg-6">--}}
-{{--          <form action="forms/contact.php" method="post" role="form" class="php-email-form">--}}
-{{--            <div class="row gy-4">--}}
-{{--              <div class="col-lg-6 form-group">--}}
-{{--                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>--}}
-{{--              </div>--}}
-{{--              <div class="col-lg-6 form-group">--}}
-{{--                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>--}}
-{{--              </div>--}}
-{{--            </div>--}}
-{{--            <div class="form-group">--}}
-{{--              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>--}}
-{{--            </div>--}}
-{{--            <div class="form-group">--}}
-{{--              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>--}}
-{{--            </div>--}}
-{{--            <div class="my-3">--}}
-{{--              <div class="loading">Loading</div>--}}
-{{--              <div class="error-message"></div>--}}
-{{--              <div class="sent-message">Your message has been sent. Thank you!</div>--}}
-{{--            </div>--}}
-{{--            <div class="text-center"><button type="submit">Send Message</button></div>--}}
-{{--          </form>--}}
-{{--        </div>--}}
+        <div class="col-lg-6">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row gy-4">
+              <div class="col-lg-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Adınız" required>
+              </div>
+              <div class="col-lg-6 form-group">
+                <input type="text" class="form-control" name="email" id="email" placeholder="Telefon numaranız" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Konu" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" placeholder="Mesajınız" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Yükleniyor</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Mesajınız iletilmiştir. En yakın zamanda sizi arayacağız!</div>
+            </div>
+            <div class="text-center"><button type="submit">Gönder</button></div>
+          </form>
+        </div>
         <!-- End Contact Form -->
 
       </div>
