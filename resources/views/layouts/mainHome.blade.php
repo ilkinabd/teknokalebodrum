@@ -195,12 +195,12 @@
 
         <div class="col-lg-4 col-md-6">
           <div class="footer-info">
-            <h3>UpConstruction</h3>
+            <h3>Teknokale Bodrum</h3>
             <p>
-              A108 Adam Street <br>
-              NY 535022, USA<br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              Cevat Şakir mah. Hoca Ahmet<br>
+              Yesevi cad. No 26/a Bodrum<br><br>
+              <strong>Telefon:</strong> <a href="tel:+905524504809">+905524504809</a>, <a href="tel:+902526060615">+902526060615</a><br>
+              <strong>Email:</strong> teknokalebodrum@gmail.com<br>
             </p>
             <div class="social-links d-flex mt-3">
               <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
@@ -212,48 +212,48 @@
         </div><!-- End footer info column-->
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Faydalı linkler</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="javascript:void(0)">Ana sayfa</a></li>
+            <li><a href="javascript:void(0)">Biy kimiz</a></li>
+            <li><a href="javascript:void(0)">Hizmetlerimiz</a></li>
+{{--            <li><a href="#">Terms of service</a></li>--}}
+{{--            <li><a href="#">Privacy policy</a></li>--}}
           </ul>
         </div><!-- End footer links column-->
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
+          <h4>Hizmetlerimiz</h4>
+{{--          <ul>--}}
+{{--            <li><a href="#">Web Design</a></li>--}}
+{{--            <li><a href="#">Web Development</a></li>--}}
+{{--            <li><a href="#">Product Management</a></li>--}}
+{{--            <li><a href="#">Marketing</a></li>--}}
+{{--            <li><a href="#">Graphic Design</a></li>--}}
+{{--          </ul>--}}
         </div><!-- End footer links column-->
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
-          <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
-          </ul>
-        </div><!-- End footer links column-->
+{{--        <div class="col-lg-2 col-md-3 footer-links">--}}
+{{--          <h4>Hic solutasetp</h4>--}}
+{{--          <ul>--}}
+{{--            <li><a href="#">Molestiae accusamus iure</a></li>--}}
+{{--            <li><a href="#">Excepturi dignissimos</a></li>--}}
+{{--            <li><a href="#">Suscipit distinctio</a></li>--}}
+{{--            <li><a href="#">Dilecta</a></li>--}}
+{{--            <li><a href="#">Sit quas consectetur</a></li>--}}
+{{--          </ul>--}}
+{{--        </div><!-- End footer links column-->--}}
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
-          <ul>
-            <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
-          </ul>
-        </div><!-- End footer links column-->
+{{--        <div class="col-lg-2 col-md-3 footer-links">--}}
+{{--          <h4>Nobis illum</h4>--}}
+{{--          <ul>--}}
+{{--            <li><a href="#">Ipsam</a></li>--}}
+{{--            <li><a href="#">Laudantium dolorum</a></li>--}}
+{{--            <li><a href="#">Dinera</a></li>--}}
+{{--            <li><a href="#">Trodelas</a></li>--}}
+{{--            <li><a href="#">Flexo</a></li>--}}
+{{--          </ul>--}}
+{{--        </div><!-- End footer links column-->--}}
 
       </div>
     </div>

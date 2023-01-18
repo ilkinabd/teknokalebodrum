@@ -35,7 +35,7 @@
           <div class="info-item  d-flex flex-column justify-content-center align-items-center">
             <i class="bi bi-telephone"></i>
             <h3>Telefon</h3>
-            <p><a href="tel:+905524504809">+905524504809</a> , <a href="tel:+902526060615">+902526060615</a></p>
+            <p><a href="tel:+905524504809">+905524504809</a> <a href="tel:+902526060615">+902526060615</a></p>
           </div>
         </div><!-- End Info Item -->
 
