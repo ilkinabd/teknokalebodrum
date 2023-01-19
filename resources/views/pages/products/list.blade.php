@@ -46,7 +46,14 @@
           </div>
         </aside>
         <div class="col-lg-8">
-          <h1>{{$currentCategory['title']}}</h1>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h1 class="mb-0">{{$currentCategory['title']}}</h1>
+            <div>
+              <a href="tel:+905524504809" class="btn-info">İletişim (tel-1)</a>
+              <a href="tel:+902526060615" class="btn-info">İletişim (tel-2)</a>
+              <a href="https://api.whatsapp.com/send?phone=+905524504809&text=Selam teknokale bodrum sitesinden yaziyorum" class="btn-info">İletişim (Whatsapp)</a>
+            </div>
+          </div>
           <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
             @foreach($currentCategory['products'] as $product)

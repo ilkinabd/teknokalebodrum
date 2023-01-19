@@ -74,6 +74,9 @@
                 @foreach($downloads as $download)
                   <a href="{{$download['link']}}" class="btn-info">{{$download['name']}}</a>
                 @endforeach
+                  <a href="tel:+905524504809" class="btn-info">İletişim (tel-1)</a>
+                  <a href="tel:+902526060615" class="btn-info">İletişim (tel-2)</a>
+                  <a href="https://api.whatsapp.com/send?phone=+905524504809&text=Selam teknokale bodrum sitesinden yaziyorum" class="btn-info">İletişim (Whatsapp)</a>
               </div>
               <h3 class="my-3">Ürün açıklaması</h3>
               <p>

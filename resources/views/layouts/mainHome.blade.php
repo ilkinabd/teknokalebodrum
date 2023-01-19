@@ -215,7 +215,7 @@
           <h4>Faydalı linkler</h4>
           <ul>
             <li><a href="javascript:void(0)">Ana sayfa</a></li>
-            <li><a href="javascript:void(0)">Biy kimiz</a></li>
+            <li><a href="javascript:void(0)">Biz kimiz</a></li>
             <li><a href="javascript:void(0)">Hizmetlerimiz</a></li>
 {{--            <li><a href="#">Terms of service</a></li>--}}
 {{--            <li><a href="#">Privacy policy</a></li>--}}

@@ -49,6 +49,7 @@
 
         <div class="col-lg-6">
           <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <p>Herhangi bir konuda bilgi almak için mesaj bırakabilirsiniz (Onur Özkan)</p>
             <div class="row gy-4">
               <div class="col-lg-6 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Adınız" required>
