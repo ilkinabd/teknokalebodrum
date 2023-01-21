@@ -138,9 +138,10 @@
   <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
     <a href="{{route('home')}}" class="logo d-flex align-items-center">
+      <img src="{{asset('storage/assets/img/logo.png')}}" style="width: 32px" alt="">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1>Teknokale<span> bodrum</span></h1>
+      <h1>Teknokale</h1>
     </a>
 
     <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -287,7 +288,11 @@
 <!-- End Footer -->
 
 <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+<div class="d-flex flex-column contact-us">
+  <a href="https://api.whatsapp.com/send?phone=+905524504809&text=Selam teknokale bodrum sitesinden yaziyorum" class="d-flex align-items-center justify-content-center"><i
+      class="fa-brands fa-whatsapp"></i></a>
+  <a href="tel:+905524504809" class="d-flex align-items-center justify-content-center" style="font-size: 22px"><i class="fa-solid fa-phone-flip"></i></a>
+</div>
 <div id="preloader"></div>
 
 <!-- Vendor JS Files -->
