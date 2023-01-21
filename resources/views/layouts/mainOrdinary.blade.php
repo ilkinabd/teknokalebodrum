@@ -44,7 +44,7 @@
   <link href="{{asset('storage/assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
   <link href="{{asset('storage/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
   <!-- Template Main CSS File -->
-  <link href="{{asset('storage/assets/css/main.css')}}" rel="stylesheet">
+  <link href="{{asset('storage/assets/css/main.css')}}?v=1" rel="stylesheet">
 
   <style>
       .accordion-category .list-group .list-group {
