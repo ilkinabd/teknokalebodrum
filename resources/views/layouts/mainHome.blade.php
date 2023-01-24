@@ -125,7 +125,10 @@
       <img src="{{asset('storage/assets/img/logo.png')}}" style="width: 32px" alt="">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1>Teknokale</h1>
+      <div style="line-height: 12px">
+        <h1>Teknokale</h1>
+        <small class="mb-0 d-none d-md-block">Kilit sistemleri Bilişim ve Güvenlik Teknolojileri</small>
+      </div>
     </a>
 
     <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -285,9 +288,9 @@
 </footer>
 <!-- End Footer -->
 
-<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<a href="javascript:void(0)" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 <div class="d-flex flex-column contact-us">
-  <a href="whatsapp://send?phone=+905524504809&text=Selam teknokale bodrum sitesinden yaziyorum" class="d-flex align-items-center justify-content-center"><i
+  <a href="https://api.whatsapp.com/send?phone=+905524504809&text=Selam teknokale bodrum sitesinden yaziyorum" class="d-flex align-items-center justify-content-center"><i
       class="fa-brands fa-whatsapp"></i></a>
   <a href="tel:+905524504809" class="d-flex align-items-center justify-content-center" style="font-size: 22px"><i class="fa-solid fa-phone-flip"></i></a>
 </div>
@@ -310,6 +313,11 @@
             includedLanguages: 'tr,en,fr,de',
             layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
         }, 'google_translate_element');
+        const langElement = document.querySelector('.goog-te-menu-value>span:nth-of-type(1)');
+        console.log(langElement);
+        setTimeout(() => {
+            langElement.innerHTML = 'TR';
+        },1000)
     }
 </script>
 

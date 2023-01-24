@@ -141,8 +141,12 @@
       <img src="{{asset('storage/assets/img/logo.png')}}" style="width: 32px" alt="">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1>Teknokale</h1>
+      <div style="line-height: 12px">
+        <h1>Teknokale</h1>
+        <small class="mb-0 d-none d-md-block">Kilit sistemleri Bilişim ve Güvenlik Teknolojileri</small>
+      </div>
     </a>
+
 
     <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
     <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -287,7 +291,7 @@
 </footer>
 <!-- End Footer -->
 
-<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<a href="javascript:void(0)" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 <div class="d-flex flex-column contact-us">
   <a href="https://api.whatsapp.com/send?phone=+905524504809&text=Selam teknokale bodrum sitesinden yaziyorum" class="d-flex align-items-center justify-content-center"><i
       class="fa-brands fa-whatsapp"></i></a>
@@ -303,6 +307,22 @@
 <script src="{{asset('storage/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
 <script src="{{asset('storage/assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
 <script src="{{asset('storage/assets/vendor/php-email-form/validate.js')}}"></script>
+<script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'tr',
+            includedLanguages: 'tr,en,fr,de',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        }, 'google_translate_element');
+        const langElement = document.querySelector('.goog-te-menu-value>span:nth-of-type(1)');
+        console.log(langElement);
+        setTimeout(() => {
+            langElement.innerHTML = 'TR';
+        },1000)
+    }
+</script>
 
 <!-- Template Main JS File -->
 <script src="{{asset('storage/assets/js/main.js')}}"></script>
