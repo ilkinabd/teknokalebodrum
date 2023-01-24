@@ -11,7 +11,7 @@
   <meta name="title" content="Kaliteli ve Güvenli Kilitler - Teknokale Bodrum">
   <meta name="description"
         content="Teknokale Bodrum, müşteri odaklı üretim ve hizmet misyonu ile yüksek iş ahlakı ve dürüst çalışma ilkelerini birleştirerek, kalite, güven ve garanti anlayışını dünyaya taşımak üzere 1974 yılında Türkiye'nin ilk kilit ihraç eden şirketi olmuştur.">
-
+  <meta name="color-scheme" content="light only">
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://teknokalebodrum.com/">
@@ -156,6 +156,7 @@
           </ul>
         </li>
         <li><a href="{{route('contact')}}">İletişim</a></li>
+        <li id="google_translate_element"></li>
       </ul>
     </nav><!-- .navbar -->
 
@@ -286,7 +287,7 @@
 
 <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 <div class="d-flex flex-column contact-us">
-  <a href="https://api.whatsapp.com/send?phone=+905524504809&text=Selam teknokale bodrum sitesinden yaziyorum" class="d-flex align-items-center justify-content-center"><i
+  <a href="whatsapp://send?phone=+905524504809&text=Selam teknokale bodrum sitesinden yaziyorum" class="d-flex align-items-center justify-content-center"><i
       class="fa-brands fa-whatsapp"></i></a>
   <a href="tel:+905524504809" class="d-flex align-items-center justify-content-center" style="font-size: 22px"><i class="fa-solid fa-phone-flip"></i></a>
 </div>
@@ -300,6 +301,17 @@
 <script src="{{asset('storage/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
 <script src="{{asset('storage/assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
 <script src="{{asset('storage/assets/vendor/php-email-form/validate.js')}}"></script>
+<script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'tr',
+            includedLanguages: 'tr,en,fr,de',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        }, 'google_translate_element');
+    }
+</script>
 
 <!-- Template Main JS File -->
 <script src="{{asset('storage/assets/js/main.js')}}"></script>
