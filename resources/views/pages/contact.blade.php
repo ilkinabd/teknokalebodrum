@@ -43,8 +43,10 @@
 
       <div class="row gy-4 mt-1">
 
-        <div class="col-lg-6 ">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d473.40501569770464!2d27.40763421144538!3d37.041355534401404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14be6de6bb9530bb%3A0xc88514ea394682a8!2sTekno%20Kale%20Kilit%20Sistemleri%2C%20Bili%C5%9Fim%20ve%20G%C3%BCvenlik%20Teknolojileri!5e0!3m2!1str!2str!4v1674059187744!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="col-lg-6">
+          <div id="google-maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d473.40501569770464!2d27.40763421144538!3d37.041355534401404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14be6de6bb9530bb%3A0xc88514ea394682a8!2sTekno%20Kale%20Kilit%20Sistemleri%2C%20Bili%C5%9Fim%20ve%20G%C3%BCvenlik%20Teknolojileri!5e0!3m2!1str!2str!4v1674059187744!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div><!-- End Google Maps -->
 
         <div class="col-lg-6">
