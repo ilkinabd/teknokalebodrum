@@ -289,7 +289,7 @@
 </footer>
 <!-- End Footer -->
 
-<a href="javascript:void(0)" class="scroll-top d-flex align-items-center justify-content-center"><i
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
     class="bi bi-arrow-up-short"></i></a>
 <div class="d-flex flex-column contact-us">
   <a href="whatsapp://send?phone=+905524504809&text=Selam teknokale bodrum sitesinden yaziyorum"
