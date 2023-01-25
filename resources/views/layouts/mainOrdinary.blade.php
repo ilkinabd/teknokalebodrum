@@ -158,28 +158,30 @@
         <li><a href="{{route('home')}}">Ana sayfa</a></li>
         <li><a href="javascript:void(0);">Hakkımızda</a></li>
         <!--          <li><a href="services.html">Hizmetlerimiz</a></li>-->
-        <li><a href="/urunler" class="{{ (strpos(Route::currentRouteName(), 'products') == 0) ? 'active' : '' }}">Ürünler</a></li>
+        <li><a href="/urunler" class="{{ (strpos(Route::currentRouteName(), 'products') !== false) ? 'active' : '' }}">Ürünler</a>
+        </li>
         <li><a href="javascript:void(0);">Haberler</a></li>
         <li class="dropdown"><a href="javascript:void(0)"><span>Hizmetlerimiz</span> <i
               class="bi bi-chevron-down dropdown-indicator"></i></a>
-{{--          <ul>--}}
-{{--            <li><a href="javascript:void(0);">Hizmet 1</a></li>--}}
-{{--            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i--}}
-{{--                  class="bi bi-chevron-down dropdown-indicator"></i></a>-->--}}
-{{--              <ul>--}}
-{{--                <li><a href="#">Deep Dropdown 1</a></li>--}}
-{{--                <li><a href="#">Deep Dropdown 2</a></li>--}}
-{{--                <li><a href="#">Deep Dropdown 3</a></li>--}}
-{{--                <li><a href="#">Deep Dropdown 4</a></li>--}}
-{{--                <li><a href="#">Deep Dropdown 5</a></li>--}}
-{{--              </ul>--}}
-{{--            </li>--}}
-{{--            <li><a href="javascript:void(0);">Hizmet 2</a></li>--}}
-{{--            <li><a href="#">Dropdown 3</a></li>--}}
-{{--            <li><a href="#">Dropdown 4</a></li>--}}
-{{--          </ul>--}}
+          {{--          <ul>--}}
+          {{--            <li><a href="javascript:void(0);">Hizmet 1</a></li>--}}
+          {{--            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i--}}
+          {{--                  class="bi bi-chevron-down dropdown-indicator"></i></a>-->--}}
+          {{--              <ul>--}}
+          {{--                <li><a href="#">Deep Dropdown 1</a></li>--}}
+          {{--                <li><a href="#">Deep Dropdown 2</a></li>--}}
+          {{--                <li><a href="#">Deep Dropdown 3</a></li>--}}
+          {{--                <li><a href="#">Deep Dropdown 4</a></li>--}}
+          {{--                <li><a href="#">Deep Dropdown 5</a></li>--}}
+          {{--              </ul>--}}
+          {{--            </li>--}}
+          {{--            <li><a href="javascript:void(0);">Hizmet 2</a></li>--}}
+          {{--            <li><a href="#">Dropdown 3</a></li>--}}
+          {{--            <li><a href="#">Dropdown 4</a></li>--}}
+          {{--          </ul>--}}
         </li>
-        <li><a href="{{route('contact')}}" class="{{ (strpos(Route::currentRouteName(), 'contact') == 0) ? 'active' : '' }}">İletişim</a></li>
+        <li><a href="{{route('contact')}}"
+               class="{{ (strpos(Route::currentRouteName(), 'contact') !== false) ? 'active' : '' }}">İletişim</a></li>
         <li id="google_translate_element"></li>
       </ul>
     </nav><!-- .navbar -->
