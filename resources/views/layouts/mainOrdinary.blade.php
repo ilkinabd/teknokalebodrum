@@ -9,20 +9,23 @@
   <!-- Primary Meta Tags -->
   <title>Kaliteli ve Güvenli Kilitler - Teknokale Bodrum</title>
   <meta name="title" content="Kaliteli ve Güvenli Kilitler - Teknokale Bodrum">
-  <meta name="description" content="Teknokale Bodrum, müşteri odaklı üretim ve hizmet misyonu ile yüksek iş ahlakı ve dürüst çalışma ilkelerini birleştirerek, kalite, güven ve garanti anlayışını dünyaya taşımak üzere 1974 yılında Türkiye'nin ilk kilit ihraç eden şirketi olmuştur.">
+  <meta name="description"
+        content="Teknokale Bodrum, müşteri odaklı üretim ve hizmet misyonu ile yüksek iş ahlakı ve dürüst çalışma ilkelerini birleştirerek, kalite, güven ve garanti anlayışını dünyaya taşımak üzere 1974 yılında Türkiye'nin ilk kilit ihraç eden şirketi olmuştur.">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://teknokalebodrum.com/">
   <meta property="og:title" content="Kaliteli ve Güvenli Kilitler - Teknokale Bodrum">
-  <meta property="og:description" content="Teknokale Bodrum, müşteri odaklı üretim ve hizmet misyonu ile yüksek iş ahlakı ve dürüst çalışma ilkelerini birleştirerek, kalite, güven ve garanti anlayışını dünyaya taşımak üzere 1974 yılında Türkiye'nin ilk kilit ihraç eden şirketi olmuştur.">
+  <meta property="og:description"
+        content="Teknokale Bodrum, müşteri odaklı üretim ve hizmet misyonu ile yüksek iş ahlakı ve dürüst çalışma ilkelerini birleştirerek, kalite, güven ve garanti anlayışını dünyaya taşımak üzere 1974 yılında Türkiye'nin ilk kilit ihraç eden şirketi olmuştur.">
   <meta property="og:image" content="">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="http://teknokalebodrum.com/">
   <meta property="twitter:title" content="Kaliteli ve Güvenli Kilitler - Teknokale Bodrum">
-  <meta property="twitter:description" content="Teknokale Bodrum, müşteri odaklı üretim ve hizmet misyonu ile yüksek iş ahlakı ve dürüst çalışma ilkelerini birleştirerek, kalite, güven ve garanti anlayışını dünyaya taşımak üzere 1974 yılında Türkiye'nin ilk kilit ihraç eden şirketi olmuştur.">
+  <meta property="twitter:description"
+        content="Teknokale Bodrum, müşteri odaklı üretim ve hizmet misyonu ile yüksek iş ahlakı ve dürüst çalışma ilkelerini birleştirerek, kalite, güven ve garanti anlayışını dünyaya taşımak üzere 1974 yılında Türkiye'nin ilk kilit ihraç eden şirketi olmuştur.">
   <meta property="twitter:image" content="">
 
   <!-- Favicons -->
@@ -159,21 +162,22 @@
         <li><a href="javascript:void(0);">Haberler</a></li>
         <li class="dropdown"><a href="javascript:void(0)"><span>Hizmetlerimiz</span> <i
               class="bi bi-chevron-down dropdown-indicator"></i></a>
-          <ul>
-            <li><a href="javascript:void(0);">Hizmet 1</a></li>
-            <!--              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>-->
-            <!--                <ul>-->
-            <!--                  <li><a href="#">Deep Dropdown 1</a></li>-->
-            <!--                  <li><a href="#">Deep Dropdown 2</a></li>-->
-            <!--                  <li><a href="#">Deep Dropdown 3</a></li>-->
-            <!--                  <li><a href="#">Deep Dropdown 4</a></li>-->
-            <!--                  <li><a href="#">Deep Dropdown 5</a></li>-->
-            <!--                </ul>-->
-            <!--              </li>-->
-            <li><a href="javascript:void(0);">Hizmet 2</a></li>
-            <!--              <li><a href="#">Dropdown 3</a></li>-->
-            <!--              <li><a href="#">Dropdown 4</a></li>-->
-          </ul>
+{{--          <ul>--}}
+{{--            <li><a href="javascript:void(0);">Hizmet 1</a></li>--}}
+{{--            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i--}}
+{{--                  class="bi bi-chevron-down dropdown-indicator"></i></a>-->--}}
+{{--              <ul>--}}
+{{--                <li><a href="#">Deep Dropdown 1</a></li>--}}
+{{--                <li><a href="#">Deep Dropdown 2</a></li>--}}
+{{--                <li><a href="#">Deep Dropdown 3</a></li>--}}
+{{--                <li><a href="#">Deep Dropdown 4</a></li>--}}
+{{--                <li><a href="#">Deep Dropdown 5</a></li>--}}
+{{--              </ul>--}}
+{{--            </li>--}}
+{{--            <li><a href="javascript:void(0);">Hizmet 2</a></li>--}}
+{{--            <li><a href="#">Dropdown 3</a></li>--}}
+{{--            <li><a href="#">Dropdown 4</a></li>--}}
+{{--          </ul>--}}
         </li>
         <li><a href="{{route('contact')}}">İletişim</a></li>
         <li id="google_translate_element"></li>
@@ -292,11 +296,14 @@
 </footer>
 <!-- End Footer -->
 
-<a href="javascript:void(0)" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<a href="javascript:void(0)" class="scroll-top d-flex align-items-center justify-content-center"><i
+    class="bi bi-arrow-up-short"></i></a>
 <div class="d-flex flex-column contact-us">
-  <a href="whatsapp://send?phone=+905524504809&text=Selam teknokale bodrum sitesinden yaziyorum" class="d-flex align-items-center justify-content-center"><i
+  <a href="whatsapp://send?phone=+905524504809&text=Selam teknokale bodrum sitesinden yaziyorum"
+     class="d-flex align-items-center justify-content-center"><i
       class="fa-brands fa-whatsapp"></i></a>
-  <a href="tel:+905524504809" class="d-flex align-items-center justify-content-center" style="font-size: 22px"><i class="fa-solid fa-phone-flip"></i></a>
+  <a href="tel:+905524504809" class="d-flex align-items-center justify-content-center" style="font-size: 22px"><i
+      class="fa-solid fa-phone-flip"></i></a>
 </div>
 <div id="preloader"></div>
 
@@ -321,7 +328,7 @@
         console.log(langElement);
         setTimeout(() => {
             langElement.innerHTML = 'TR';
-        },1000)
+        }, 1000)
     }
 </script>
 
