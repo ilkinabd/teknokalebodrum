@@ -176,6 +176,7 @@
           </ul>
         </li>
         <li><a href="{{route('contact')}}">İletişim</a></li>
+        <li id="google_translate_element"></li>
       </ul>
     </nav><!-- .navbar -->
 
