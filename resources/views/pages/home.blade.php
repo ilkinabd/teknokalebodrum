@@ -26,8 +26,8 @@
           <div class="content">
             <h3>Sitemiz yapım aşamasındadır</h3>
             <p>Ürünlerle ilgli <a href="{{route('products')}}">ürünler sayfasından</a> bilgi ala bilirsiniz
-            <p>Aliquam velit deserunt autem. Inventore et saepe. Tenetur suscipit eligendi labore culpa eos. Deserunt
-              porro magni qui necessitatibus dolorem at animi cupiditate.</p>
+{{--            <p>Aliquam velit deserunt autem. Inventore et saepe. Tenetur suscipit eligendi labore culpa eos. Deserunt--}}
+{{--              porro magni qui necessitatibus dolorem at animi cupiditate.</p>--}}
           </div>
         </div>
 
