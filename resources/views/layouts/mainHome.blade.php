@@ -310,7 +310,7 @@
     function googleTranslateElementInit() {
         new google.translate.TranslateElement({
             pageLanguage: 'tr',
-            includedLanguages: 'tr,en,fr,de',
+            includedLanguages: 'tr,en,fr,de,ru',
             layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
         }, 'google_translate_element');
         const langElement = document.querySelector('.goog-te-menu-value>span:nth-of-type(1)');
