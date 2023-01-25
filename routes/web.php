@@ -19,6 +19,6 @@ Route::get('/', [PagesController::class, 'home'])->name('home');
 Route::get('/iletisim', [PagesController::class, 'contact'])->name('contact');
 Route::get('/urunler', function () {
     return redirect('urunler/silindirler');
-});
+})->name('products');
 Route::get('/urunler/{category}', [ProductsController::class, 'list'])->name('products.list');
 Route::get('/urunler/{category}/{product}', [ProductsController::class, 'detail'])->name('products.detail');

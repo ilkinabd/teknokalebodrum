@@ -24,10 +24,8 @@
 
         <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
           <div class="content">
-            <h3>Minus hic non reiciendis ea possimus at quia.</h3>
-            <p>Rem id rerum. Debitis deserunt quidem delectus expedita ducimus dolor. Aut iusto ipsa. Eos ipsum nobis
-              ipsa soluta itaque perspiciatis fuga ipsum perspiciatis. Eum amet fugiat totam nisi possimus ut delectus
-              dicta.
+            <h3>Sitemiz yapım aşamasındadır</h3>
+            <p>Ürünlerle ilgli <a href="{{route('products')}}">ürünler sayfasından</a> bilgi ala bilirsiniz
             <p>Aliquam velit deserunt autem. Inventore et saepe. Tenetur suscipit eligendi labore culpa eos. Deserunt
               porro magni qui necessitatibus dolorem at animi cupiditate.</p>
           </div>
@@ -35,13 +33,11 @@
 
         <div class="col-lg-5" data-aos="fade">
           <form action="forms/quote.php" method="post" class="php-email-form">
-            <h3>Get a quote</h3>
-            <p>Vel nobis odio laboriosam et hic voluptatem. Inventore vitae totam. Rerum repellendus enim linead sero
-              park flows.</p>
+            <h3>İletişim Formu</h3>
             <div class="row gy-3">
 
               <div class="col-md-12">
-                <input type="text" name="name" class="form-control" placeholder="Name" required>
+                <input type="text" name="name" class="form-control" placeholder="Adınız" required>
               </div>
 
               <div class="col-md-12 ">
@@ -49,19 +45,19 @@
               </div>
 
               <div class="col-md-12">
-                <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                <input type="text" class="form-control" name="phone" placeholder="Telefon numaranız" required>
               </div>
 
               <div class="col-md-12">
-                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="6" placeholder="Mesaj" required></textarea>
               </div>
 
               <div class="col-md-12 text-center">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
+                <div class="sent-message">Mesajınıy iletildi. En zakın yamanda sizi arazacağız!</div>
 
-                <button type="submit">Get a quote</button>
+                <button type="submit">Gönder</button>
               </div>
 
             </div>
