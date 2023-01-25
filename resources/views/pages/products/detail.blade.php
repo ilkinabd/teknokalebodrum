@@ -52,37 +52,46 @@
           </div>
         </aside>
         <div class="col-lg-8 product-view">
-          <div class="card mt-3 mt-lg-0">
-            <div class="card-header">Ürün açıklaması</div>
-            <div class="card-body">
-              <p class="card-text">
-                {{$product['description']}}
-              </p>
-            </div>
-          </div>
-          <div class="card mt-3">
-            <div class="card-header">Ürün resimleri</div>
-            <div class="card-body">
-              <div class="current-image" id="img-container" style="max-width: 300px;">
-                <img src="{{$images[0]}}" alt="{{$product['title']}}" class="img-fluid">
-              </div>
-              <div class="thumbs d-flex align-items-center justify-between">
-                @foreach($images as $index=>$image)
-                  <a href="javascript:void(0)" class="thumb"
-                     @if($index > 0) style="margin-left: 8px" @endif>
-                    <img src="{{$image}}" class="img-fluid" alt="{{$product['title']}}">
-                  </a>
-                @endforeach
+          <div class="row">
+            <div class="col-12">
+              <div class="card mt-3 mt-lg-0">
+                <div class="card-header">Ürün açıklaması</div>
+                <div class="card-body">
+                  <p class="card-text">
+                    {{$product['description']}}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card mt-3">
-            <div class="card-header">Ürün dosyaları</div>
-            <div class="card-body">
-              <div class="d-flex">
-                @foreach($downloads as $index => $download)
-                  <a href="{{$download['link']}}" class="btn-info{{$index > 0 ? ' ms-2' : ''}}">{{$download['name']}}</a>
-                @endforeach
+            <div class="col-lg-6">
+              <div class="card mt-3">
+                <div class="card-header">Ürün resimleri</div>
+                <div class="card-body">
+                  <div class="current-image" id="img-container" style="max-width: 300px;">
+                    <img src="{{$images[0]}}" alt="{{$product['title']}}" class="img-fluid">
+                  </div>
+                  <div class="thumbs d-flex align-items-center justify-between">
+                    @foreach($images as $index=>$image)
+                      <a href="javascript:void(0)" class="thumb"
+                         @if($index > 0) style="margin-left: 8px" @endif>
+                        <img src="{{$image}}" class="img-fluid" alt="{{$product['title']}}">
+                      </a>
+                    @endforeach
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card mt-3">
+                <div class="card-header">Ürün dosyaları</div>
+                <div class="card-body">
+                  <div class="d-flex flex-md-row flex-column flex-lg-column">
+                    @foreach($downloads as $index => $download)
+                      <a href="{{$download['link']}}"
+                         class="d-block btn-info{{$index > 0 ? ' mt-lg-2 mt-1 mt-md-0 ms-md-1 ms-lg-0' : ''}}">{{$download['name']}}</a>
+                    @endforeach
+                  </div>
+                </div>
               </div>
             </div>
           </div>
