@@ -47,7 +47,7 @@
   <link href="{{asset('storage/assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
   <link href="{{asset('storage/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
   <!-- Template Main CSS File -->
-  <link href="{{asset('storage/assets/css/main.css')}}?v=2" rel="stylesheet">
+  <link href="{{asset('storage/assets/css/main.css')}}?v=3" rel="stylesheet">
 
 </head>
 
