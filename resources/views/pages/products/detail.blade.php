@@ -8,7 +8,7 @@
   $images = json_decode($product['images'],true);
   $downloads = json_decode($product['downloads'],true);
 @endphp
-@section('title',$product['title'])
+@section('title',$product['product_code'].' '.$product['title'])
 
 @section('breadcrumbs')
   <ol>

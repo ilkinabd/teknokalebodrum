@@ -7,6 +7,7 @@ use App\Models\Product;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
+use Illuminate\Http\Request;
 
 class ProductsController extends Controller
 {
@@ -31,4 +32,23 @@ class ProductsController extends Controller
             'product'         => $product
         ]);
     }
+
+    public function search(Request $request): Factory|View|Application
+    {
+        $request->validate([
+            'q' => 'required|min:3|max:255',
+        ]);
+        $categories = Category::with('children')->whereNull('parent_id')->get(['id', 'parent_id', 'title', 'slug'])->toArray();
+        $products   = Product::with('category')
+            ->orWhere('title', 'LIKE', '%' . $request->input('q') . '%')
+            ->orWhere('product_code', 'LIKE', '%' . $request->input('q') . '%')
+            ->simplePaginate(10)->withQueryString();
+
+        return view('pages.products.search', [
+            'products'   => $products,
+            'value'      => $request->input('q'),
+            'categories' => $categories
+        ]);
+    }
+
 }

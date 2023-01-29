@@ -26,4 +26,10 @@ class PagesController extends Controller
         return view('pages.contact', [
         ]);
     }
+
+    public function catalog(): Factory|View|Application
+    {
+        return view('pages.catalog', [
+        ]);
+    }
 }

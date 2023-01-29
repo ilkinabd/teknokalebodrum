@@ -77,7 +77,8 @@
         <!--          <li><a href="services.html">Hizmetlerimiz</a></li>-->
         <li><a href="/urunler" class="{{ (strpos(Route::currentRouteName(), 'products') !== false) ? 'active' : '' }}">Ürünler</a>
         </li>
-        <li><a href="javascript:void(0);">Haberler</a></li>
+        <li><a href="{{route('catalog')}}"
+               class="{{ (strpos(Route::currentRouteName(), 'catalog') !== false) ? 'active' : '' }}">Katalog</a></li>
         <li class="dropdown"><a href="javascript:void(0)"><span>Hizmetlerimiz</span> <i
               class="bi bi-chevron-down dropdown-indicator"></i></a>
           {{--          <ul>--}}
@@ -244,7 +245,6 @@
             layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
         }, 'google_translate_element');
         const langElement = document.querySelector('.goog-te-menu-value>span:nth-of-type(1)');
-        console.log(langElement);
         setTimeout(() => {
             langElement.innerHTML = 'TR';
         }, 1000)
