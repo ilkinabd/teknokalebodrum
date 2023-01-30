@@ -47,7 +47,7 @@
   <link href="{{asset('storage/assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
   <link href="{{asset('storage/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
   <!-- Template Main CSS File -->
-  <link href="{{asset('storage/assets/css/main.css')}}?v=4" rel="stylesheet">
+  <link href="{{asset('storage/assets/css/main.css')}}?v=5" rel="stylesheet">
 
 </head>
 
@@ -244,10 +244,10 @@
             includedLanguages: 'tr,en,fr,de,ru',
             layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
         }, 'google_translate_element');
-        const langElement = document.querySelector('.goog-te-menu-value>span:nth-of-type(1)');
-        setTimeout(() => {
-            langElement.innerHTML = 'TR';
-        }, 1000)
+        // const langElement = document.querySelector('.goog-te-menu-value>span:nth-of-type(1)');
+        // setTimeout(() => {
+        //     langElement.innerHTML = 'TR';
+        // }, 1000)
     }
 </script>
 
