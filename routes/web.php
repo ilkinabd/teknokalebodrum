@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AjaxController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ProductsController;
 use Illuminate\Support\Facades\Route;
@@ -24,3 +25,4 @@ Route::get('/urunler', function () {
 Route::get('/urunler/ara', [ProductsController::class, 'search'])->name('products.search');
 Route::get('/urunler/{category}', [ProductsController::class, 'list'])->name('products.list');
 Route::get('/urunler/{category}/{product}', [ProductsController::class, 'detail'])->name('products.detail');
+Route::post('/ajax/contact', [AjaxController::class, 'contactForm'])->name('ajax.contact');

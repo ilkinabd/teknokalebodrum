@@ -50,21 +50,22 @@
         </div><!-- End Google Maps -->
 
         <div class="col-lg-6">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form action="{{route('ajax.contact')}}" method="post" role="form" class="php-email-form">
             <p>Herhangi bir konuda bilgi almak için mesaj bırakabilirsiniz (Onur Özkan)</p>
+            <input type="hidden" name="_token" value="{{csrf_token()}}">
             <div class="row gy-4">
               <div class="col-lg-6 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Adınız" required>
               </div>
               <div class="col-lg-6 form-group">
-                <input type="text" class="form-control" name="email" id="email" placeholder="Telefon numaranız" required>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
               </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Konu" required>
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefon" required>
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" placeholder="Mesajınız" required></textarea>
+              <textarea class="form-control" name="message" rows="5" placeholder="Mesajınız"></textarea>
             </div>
             <div class="my-3">
               <div class="loading">Yükleniyor</div>
