@@ -3,6 +3,7 @@
 use App\Http\Controllers\AjaxController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\ServicesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,3 +27,4 @@ Route::get('/urunler/ara', [ProductsController::class, 'search'])->name('product
 Route::get('/urunler/{category}', [ProductsController::class, 'list'])->name('products.list');
 Route::get('/urunler/{category}/{product}', [ProductsController::class, 'detail'])->name('products.detail');
 Route::post('/ajax/contact', [AjaxController::class, 'contactForm'])->name('ajax.contact');
+Route::get('/hizmetler', [ServicesController::class, 'show'])->name('services.detail');
