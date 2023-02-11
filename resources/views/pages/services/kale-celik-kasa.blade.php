@@ -5,45 +5,68 @@
 
 
 @section('content')
-  <div class="container">
-    <div class="d-flex justify-content-between align-items-center py-3">
-      <img class="flex-shrink-0" style="width: 60px" src="{{asset('storage/assets/img/logo.png')}}" alt="kale-kilit">
-      <p class="mb-0">
-
-        Tekno Kale @ Kale Çelik Kasa iştirakı olup Bodrum Yetkili Bayi ve Yetkili Servisidir.<br>
-        Kale Çelik kasaların yetkili elden Satışı Nakliyesi ve Onarım hizmetlerini Garantili olarak sunmaktadır. <br>
-        Kale Çelik Kasaya ait verdiğimiz hizmetler aşağıda bilginize sunulmuştur; <br>
-      </p>
-      <img class="flex-shrink-0" style="width: 60px" src="{{asset('storage/assets/img/logo.png')}}" alt="kale-kilit">
+  <div class="container projects">
+    <div class="row justify-content-center">
+      <div class="col-lg-10" style="position: relative">
+        <p class="my-4 service-desc">
+          Tekno Kale @ Kale Çelik Kasa iştirakı olup Bodrum Yetkili Bayi ve Yetkili Servisidir.
+          Kale Çelik kasaların yetkili elden Satışı Nakliyesi ve Onarım hizmetlerini Garantili olarak sunmaktadır.
+          Kale Çelik Kasaya ait verdiğimiz hizmetler aşağıda bilginize sunulmuştur;
+        </p>
+        <ul class="list-group mb-4">
+          <li class="list-group-item">Aracısız Kasa Satışı ve Direkt Fabrikadan Ürün Temin Avantajı</li>
+          <li class="list-group-item">Tüm Kale Çelik Kasa Modellerine Garantili Çilingirlik Hizmeti</li>
+          <li class="list-group-item">Tüm Kasa Modelleri İçin Kurulum, Duvara veya Dolaba Montaj Hizmeti</li>
+          <li class="list-group-item">Ağır Kasalar İçin Nakliye, Eve ve Ofise Aldırma Hizmeti</li>
+          <li class="list-group-item">Kasa Boyama, Kapak Onarımı ve Kilit Sistemi Onarımı</li>
+          <li class="list-group-item">Kasalar için Anahtar Temini ve Kopyalanması</li>
+          <li class="list-group-item">İkinci El Kasa Alım Satımı (Kale Çelik Kasalar İçin)</li>
+        </ul>
+        <p>Yarım asrı aşan tecrübesi, kurumsal yönetimi, kaliteden taviz vermeyen üretim anlayışı, dinamik ve
+          güçlü yapısı ile Kale Çelik Eşya; her geçen gün yatırımlarına hız vererek büyümeye, ulusal,
+          uluslararası ve bölgesel yatırım gücüyle ülke ekonomisine ciddi katkı sağlamaya,
+          sanayi üretiminde önemli bir rol oynamaya devam ediyor. Türkiye'de çelik kasa sektörünü
+          yaratarak yepyeni bir iş alanı yaratan ve bu konuda en çok bilinen ve üst düzey marka
+          olarak tercih edilen Kale Çelik Kasa markasıyla hem bireysel tüketici hem de
+          projelere yönelik özel çelik kasa modelleri üretiyor.
+        </p>
+        <h4 class="mb-4">Öne çıkan bazı ürünler : </h4>
+        <div class="row portfolio-container mb-4">
+          @foreach($products as $product)
+            @if(isset(json_decode($product['images'])[0]))
+              @php($image = json_decode($product['images'])[0])
+              <div class="col-lg-3 col-md-6 portfolio-item filter-remodeling mt-3 mt-lg-0">
+                <div class="portfolio-content h-100">
+                  <img src="{{$image}}" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>{{$product['product_code']}} {{$product['title']}}</h4>
+                    <a href="{{$image}}"
+                       data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
+                        class="bi bi-zoom-in"></i></a>
+                    <a
+                      href="{{route('products.detail',['category'=>$product["category"]["slug"],'product'=>$product["slug"]])}}"
+                      title="More Details"
+                      class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+            @endif
+          @endforeach
+        </div>
+        <p>Daha fazla ürün için <a href="{{route('products')}}">ürünler sayfamıza göz atın.</a></p>
+        <p>Sipariş ve Servis talepleri için <a href="{{route('contact')}}">bize ulaşın.</a></p>
+        <p>Yapılan çalışmalardan haberdar olmak isterseniz <a href="javascript:void(0)">Referanslar sayfamıza göz
+            atabilirsiniz.</a></p>
+        <div class="text-center d-none d-lg-inline" style="position:absolute;right: 0;top: 0">
+          <img class="flex-shrink-0" style="width: 70px" src="{{asset('storage/assets/img/logo.png')}}"
+               alt="kale-kilit">
+        </div>
+        <div class="text-center d-none d-lg-inline" style="position:absolute;left: -30px;top: 0px">
+          <img class="flex-shrink-0" style="width: 138px" src="{{asset('storage/assets/img/services/kale-celik-kasa.jpg')}}"
+               alt="kale-kilit">
+        </div>
+      </div>
     </div>
-    <div>
-      <ul>
-        <li>Aracısız Kasa Satışı ve Direkt Fabrikadan Ürün Temin Avantajı</li>
-        <li>Tüm Kale Çelik Kasa Modellerine Garantili Çilingirlik Hizmeti</li>
-        <li>Tüm Kasa Modelleri İçin Kurulum, Duvara veya Dolaba Montaj Hizmeti</li>
-        <li>Ağır Kasalar İçin Nakliye, Eve ve Ofise Aldırma Hizmeti</li>
-        <li>Kasa Boyama, Kapak Onarımı ve Kilit Sistemi Onarımı</li>
-        <li>Kasalar için Anahtar Temini ve Kopyalanması</li>
-        <li>İkinci El Kasa Alım Satımı (Kale Çelik Kasalar İçin)</li>
-      </ul>
-      <p>Yarım asrı aşan tecrübesi, kurumsal yönetimi, kaliteden taviz vermeyen üretim anlayışı, dinamik ve
-        güçlü yapısı ile Kale Çelik Eşya; her geçen gün yatırımlarına hız vererek büyümeye, ulusal,
-        uluslararası ve bölgesel yatırım gücüyle ülke ekonomisine ciddi katkı sağlamaya,
-        sanayi üretiminde önemli bir rol oynamaya devam ediyor. Türkiye'de çelik kasa sektörünü
-        yaratarak yepyeni bir iş alanı yaratan ve bu konuda en çok bilinen ve üst düzey marka
-        olarak tercih edilen Kale Çelik Kasa markasıyla hem bireysel tüketici hem de
-        projelere yönelik özel çelik kasa modelleri üretiyor.
-      </p>
-    </div>
-    <h3>Bazı Çelik Kasa Modelleri : </h3>
-    <div class="d-flex mb-3">
-      <div class="service-product"></div>
-      <div class="service-product ms-3"></div>
-      <div class="service-product ms-3"></div>
-      <div class="service-product ms-3"></div>
-    </div>
-    <p>Daha fazla ürün için <a href="#">ürünler sayfamıza  göz atın.</a></p>
-    <p>Sipariş ve Servis talepleri için <a href="">bize ulaşın.</a></p>
-    <p>Yapılan çalışmalardan haberdar olmak isterseniz <a href="">Referanslar sayfamıza göz atabilirsiniz.</a></p>
   </div>
 @endsection

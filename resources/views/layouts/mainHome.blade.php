@@ -78,8 +78,11 @@
         <li><a href="{{route('catalog')}}">Katalog</a></li>
         <li class="dropdown"><a href="javascript:void(0)"><span>Hizmetlerimiz</span> <i
               class="bi bi-chevron-down dropdown-indicator"></i></a>
-{{--          <ul>--}}
-{{--            <li><a href="javascript:void(0);">Hizmet 1</a></li>--}}
+          <ul>
+            <li><a href="{{route('services.detail',['slug'=>'kale-kilit'])}}">Kale Kilit</a></li>
+            <li><a href="{{route('services.detail',['slug'=>'kale-celik-kasa'])}}">Kale Çelik Kasa</a></li>
+            <li><a href="{{route('services.detail',['slug'=>'kale-celik-kapi'])}}">Kale Çelik Kapı</a></li>
+            <li><a href="{{route('services.detail',['slug'=>'kale-alarm'])}}">Kale Alarm</a></li>
 {{--            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i--}}
 {{--                  class="bi bi-chevron-down dropdown-indicator"></i></a>--}}
 {{--              <ul>--}}
@@ -91,9 +94,9 @@
 {{--              </ul>--}}
 {{--            </li>--}}
 {{--            <li><a href="javascript:void(0);">Hizmet 2</a></li>--}}
-{{--            <li><a href="#">Dropdown 3</a></li>--}}
-{{--            <li><a href="#">Dropdown 4</a></li>--}}
-{{--          </ul>--}}
+            {{--            <li><a href="#">Dropdown 3</a></li>--}}
+            {{--            <li><a href="#">Dropdown 4</a></li>--}}
+          </ul>
         </li>
         <li><a href="{{route('contact')}}">İletişim</a></li>
         <li id="google_translate_element"></li>
@@ -172,13 +175,12 @@
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Hizmetlerimiz</h4>
-          {{--          <ul>--}}
-          {{--            <li><a href="#">Web Design</a></li>--}}
-          {{--            <li><a href="#">Web Development</a></li>--}}
-          {{--            <li><a href="#">Product Management</a></li>--}}
-          {{--            <li><a href="#">Marketing</a></li>--}}
-          {{--            <li><a href="#">Graphic Design</a></li>--}}
-          {{--          </ul>--}}
+          <ul>
+            <li><a href="{{route('services.detail',['slug'=>'kale-kilit'])}}">Kale Kilit</a></li>
+            <li><a href="{{route('services.detail',['slug'=>'kale-celik-kasa'])}}">Kale Çelik Kasa</a></li>
+            <li><a href="{{route('services.detail',['slug'=>'kale-celik-kapi'])}}">Kale Çelik Kapı</a></li>
+            <li><a href="{{route('services.detail',['slug'=>'kale-alarm'])}}">Kale Alarm</a></li>
+          </ul>
         </div><!-- End footer links column-->
 
         {{--        <div class="col-lg-2 col-md-3 footer-links">--}}
