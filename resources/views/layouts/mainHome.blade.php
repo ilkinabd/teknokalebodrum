@@ -48,7 +48,7 @@
   <link href="{{asset('storage/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{{asset('storage/assets/css/main.css')}}?v=9" rel="stylesheet">
+  <link href="{{asset('storage/assets/css/main.css')}}?v=10" rel="stylesheet">
 </head>
 
 <body>
