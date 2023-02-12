@@ -43,10 +43,10 @@
             Kale Çelik kasaların yetkili elden Satışı Nakliyesi ve Onarım hizmetlerini Garantili olarak sunmaktadır.
             Kale Çelik Kasaya ait verdiğimiz hizmetler aşağıda bilginize sunulmuştur;
           </p>
-          <img class="d-none d-md-inline" style="position:absolute;right: 0;top: 10px"
+          <img class="d-none d-md-inline" style="position:absolute;right: 1px;top: 10px"
                src="{{asset('storage/assets/img/services/teknokale.jpg')}}"
                alt="kale-kilit">
-          <img class="d-none d-md-inline" style="position:absolute;left: 0;top: 10px"
+          <img class="d-none d-md-inline" style="position:absolute;left: 1px;top: 10px"
                src="{{asset('storage/assets/img/services/kale-celik-kasa.jpg')}}"
                alt="kale-kilit">
         </div>

@@ -43,10 +43,10 @@
             Kale Çelik kapıların satış sonrası her türlü servis ve tedarik sürecinde garantili hizmetler sunmaktadır
             Kale Çelik Kapıları ait hizmetler aşağıda bilginize sunulmuştur;
           </p>
-          <img class="d-none d-md-inline" style="position:absolute;right: 0;top: 10px"
+          <img class="d-none d-md-inline" style="position:absolute;right: 1px;top: 10px"
                src="{{asset('storage/assets/img/services/teknokale.jpg')}}"
                alt="kale-kilit">
-          <img class="d-none d-md-inline" style="position:absolute;left: 0;top: 10px"
+          <img class="d-none d-md-inline" style="position:absolute;left: 1px;top: 10px"
                src="{{asset('storage/assets/img/services/kale-celik-kapi.jpg')}}"
                alt="teknokale">
         </div>
