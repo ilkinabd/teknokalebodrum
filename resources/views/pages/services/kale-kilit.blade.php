@@ -8,16 +8,22 @@
   <div class="container projects">
     <div class="row justify-content-center">
       <div class="col-lg-10" style="position: relative">
-        <div class="d-flex justify-content-center d-md-none">
+        <div class="d-flex justify-content-center d-md-none mobile-logos mt-4">
           <img class="" src="{{asset('storage/assets/img/services/teknokale.jpg')}}" alt="teknokale">
           <img class="ms-2" src="{{asset('storage/assets/img/services/kale-kilit.jpg')}}" alt="kale-kilit">
         </div>
-        <p class="service-desc text-center">
-          Tekno Kale @ Kale Kilit iştirakı olup Bodrum bölge bayisi ve yetkili servisidir
-          Anahtarcılık hizmetleri kapsamında aşağıda listelenen hizmetleri garantili şekilde
-          icra etmekte, müşteri memnuniyyetini en üst düzeyde tutmayı kendine hedef edinmiştir
-          Anahtarcılık hizmetlerimiz aşağıda bilginize sunulmuştur ;
-        </p>
+        <div class="service-desc">
+          <p class="text-center mb-0">
+            Tekno Kale @ Kale Kilit iştirakı olup Bodrum bölge bayisi ve yetkili servisidir
+            Anahtarcılık hizmetleri kapsamında aşağıda listelenen hizmetleri garantili şekilde
+            icra etmekte, müşteri memnuniyyetini en üst düzeyde tutmayı kendine hedef edinmiştir
+            Anahtarcılık hizmetlerimiz aşağıda bilginize sunulmuştur ;
+          </p>
+          <img class="d-none d-md-inline" style="position:absolute;right: 0;top: 10px" src="{{asset('storage/assets/img/services/teknokale.jpg')}}"
+               alt="teknokale">
+          <img class="d-none d-md-inline" style="position:absolute;left: 0;top: 10px" src="{{asset('storage/assets/img/services/kale-kilit.jpg')}}"
+               alt="kale-kilit">
+        </div>
         <div class="row gy-5 px-2">
           <div class="col-lg-4 col-md-6">
             <div class="service-item">
@@ -122,14 +128,6 @@
         <p>Sipariş ve Servis talepleri için <a href="{{route('contact')}}">bize ulaşın.</a></p>
         <p>Yapılan çalışmalardan haberdar olmak isterseniz <a href="javascript:void(0)">Referanslar sayfamıza göz
             atabilirsiniz.</a></p>
-        <div class="text-center d-none d-md-inline" style="position:absolute;right: 0;top: 0">
-          <img class="flex-shrink-0" src="{{asset('storage/assets/img/services/teknokale.jpg')}}"
-               alt="teknokale">
-        </div>
-        <div class="text-center d-none d-md-inline" style="position:absolute;left: 0;top: 0">
-          <img class="flex-shrink-0" src="{{asset('storage/assets/img/services/kale-kilit.jpg')}}"
-               alt="kale-kilit">
-        </div>
       </div>
     </div>
   </div>

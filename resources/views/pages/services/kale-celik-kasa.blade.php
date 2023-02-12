@@ -8,15 +8,23 @@
   <div class="container projects">
     <div class="row justify-content-center">
       <div class="col-lg-10" style="position: relative">
-        <div class="d-flex justify-content-center d-md-none">
+        <div class="d-flex justify-content-center d-md-none mobile-logos mt-4">
           <img class="" src="{{asset('storage/assets/img/services/teknokale.jpg')}}" alt="teknokale">
           <img class="ms-2" src="{{asset('storage/assets/img/services/kale-celik-kasa.jpg')}}" alt="kale-celik-kasa">
         </div>
-        <p class="service-desc text-center">
-          Tekno Kale @ Kale Çelik Kasa iştirakı olup Bodrum Yetkili Bayi ve Yetkili Servisidir.
-          Kale Çelik kasaların yetkili elden Satışı Nakliyesi ve Onarım hizmetlerini Garantili olarak sunmaktadır.
-          Kale Çelik Kasaya ait verdiğimiz hizmetler aşağıda bilginize sunulmuştur;
-        </p>
+        <div class="service-desc">
+          <p class="text-center mb-0">
+            Tekno Kale @ Kale Çelik Kasa iştirakı olup Bodrum Yetkili Bayi ve Yetkili Servisidir.
+            Kale Çelik kasaların yetkili elden Satışı Nakliyesi ve Onarım hizmetlerini Garantili olarak sunmaktadır.
+            Kale Çelik Kasaya ait verdiğimiz hizmetler aşağıda bilginize sunulmuştur;
+          </p>
+          <img class="d-none d-md-inline" style="position:absolute;right: 0;top: 10px"
+               src="{{asset('storage/assets/img/services/teknokale.jpg')}}"
+               alt="kale-kilit">
+          <img class="d-none d-md-inline" style="position:absolute;left: 0;top: 10px"
+               src="{{asset('storage/assets/img/services/kale-celik-kasa.jpg')}}"
+               alt="kale-kilit">
+        </div>
         <div class="row gy-5 px-2">
           <div class="col-lg-4 col-md-6">
             <div class="service-item">
@@ -75,7 +83,8 @@
             </div>
           </div>
         </div>
-        <p class="my-4 text-center">Yarım asrı aşan tecrübesi, kurumsal yönetimi, kaliteden taviz vermeyen üretim anlayışı, dinamik ve
+        <p class="my-4 text-center">Yarım asrı aşan tecrübesi, kurumsal yönetimi, kaliteden taviz vermeyen üretim
+          anlayışı, dinamik ve
           güçlü yapısı ile Kale Çelik Eşya; her geçen gün yatırımlarına hız vererek büyümeye, ulusal,
           uluslararası ve bölgesel yatırım gücüyle ülke ekonomisine ciddi katkı sağlamaya,
           sanayi üretiminde önemli bir rol oynamaya devam ediyor. Türkiye'de çelik kasa sektörünü
@@ -111,15 +120,6 @@
         <p>Sipariş ve Servis talepleri için <a href="{{route('contact')}}">bize ulaşın.</a></p>
         <p>Yapılan çalışmalardan haberdar olmak isterseniz <a href="javascript:void(0)">Referanslar sayfamıza göz
             atabilirsiniz.</a></p>
-        <div class="text-center d-none d-lg-inline" style="position:absolute;right: 0;top: 0">
-          <img class="flex-shrink-0" src="{{asset('storage/assets/img/services/teknokale.jpg')}}"
-               alt="kale-kilit">
-        </div>
-        <div class="text-center d-none d-lg-inline" style="position:absolute;left: 0;top: 0">
-          <img class="flex-shrink-0"
-               src="{{asset('storage/assets/img/services/kale-celik-kasa.jpg')}}"
-               alt="kale-kilit">
-        </div>
       </div>
     </div>
   </div>

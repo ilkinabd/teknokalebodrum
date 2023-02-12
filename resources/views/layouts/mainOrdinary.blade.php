@@ -47,7 +47,7 @@
   <link href="{{asset('storage/assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
   <link href="{{asset('storage/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
   <!-- Template Main CSS File -->
-  <link href="{{asset('storage/assets/css/main.css')}}?v=8" rel="stylesheet">
+  <link href="{{asset('storage/assets/css/main.css')}}?v=9" rel="stylesheet">
 
 </head>
 
@@ -114,7 +114,7 @@
        style="background-image: url('{{asset('storage/assets/img/kale-og.jpg')}}');">
     <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
-      <h2>@yield('title')</h2>
+      <h2 class="text-center">@yield('title')</h2>
 
       @yield('breadcrumbs')
 
