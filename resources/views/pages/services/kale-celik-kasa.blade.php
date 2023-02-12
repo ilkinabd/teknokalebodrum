@@ -8,6 +8,10 @@
   <div class="container projects">
     <div class="row justify-content-center">
       <div class="col-lg-10" style="position: relative">
+        <div class="d-flex justify-content-center d-md-none">
+          <img class="" src="{{asset('storage/assets/img/services/teknokale.jpg')}}" alt="teknokale">
+          <img class="ms-2" src="{{asset('storage/assets/img/services/kale-celik-kasa.jpg')}}" alt="kale-celik-kasa">
+        </div>
         <p class="service-desc text-center">
           Tekno Kale @ Kale Çelik Kasa iştirakı olup Bodrum Yetkili Bayi ve Yetkili Servisidir.
           Kale Çelik kasaların yetkili elden Satışı Nakliyesi ve Onarım hizmetlerini Garantili olarak sunmaktadır.
@@ -71,7 +75,7 @@
             </div>
           </div>
         </div>
-        <p>Yarım asrı aşan tecrübesi, kurumsal yönetimi, kaliteden taviz vermeyen üretim anlayışı, dinamik ve
+        <p class="my-4 text-center">Yarım asrı aşan tecrübesi, kurumsal yönetimi, kaliteden taviz vermeyen üretim anlayışı, dinamik ve
           güçlü yapısı ile Kale Çelik Eşya; her geçen gün yatırımlarına hız vererek büyümeye, ulusal,
           uluslararası ve bölgesel yatırım gücüyle ülke ekonomisine ciddi katkı sağlamaya,
           sanayi üretiminde önemli bir rol oynamaya devam ediyor. Türkiye'de çelik kasa sektörünü
@@ -108,11 +112,11 @@
         <p>Yapılan çalışmalardan haberdar olmak isterseniz <a href="javascript:void(0)">Referanslar sayfamıza göz
             atabilirsiniz.</a></p>
         <div class="text-center d-none d-lg-inline" style="position:absolute;right: 0;top: 0">
-          <img class="flex-shrink-0" style="width: 70px" src="{{asset('storage/assets/img/logo.png')}}"
+          <img class="flex-shrink-0" src="{{asset('storage/assets/img/services/teknokale.jpg')}}"
                alt="kale-kilit">
         </div>
-        <div class="text-center d-none d-lg-inline" style="position:absolute;left: -30px;top: 0px">
-          <img class="flex-shrink-0" style="width: 138px"
+        <div class="text-center d-none d-lg-inline" style="position:absolute;left: 0;top: 0">
+          <img class="flex-shrink-0"
                src="{{asset('storage/assets/img/services/kale-celik-kasa.jpg')}}"
                alt="kale-kilit">
         </div>

@@ -8,6 +8,10 @@
   <div class="container projects">
     <div class="row justify-content-center">
       <div class="col-lg-10" style="position: relative">
+        <div class="d-flex justify-content-center d-md-none">
+          <img class="" src="{{asset('storage/assets/img/services/teknokale.jpg')}}" alt="teknokale">
+          <img class="ms-2" src="{{asset('storage/assets/img/services/kale-celik-kapi.jpg')}}" alt="kale-kilit">
+        </div>
         <p class="service-desc text-center">
           Tekno Kale @ Kale Çelik Kapı iştirakı olup Bodrum yetkili satıcısı ve yetkili servisidir
           Kale Çelik kapıların satış sonrası her türlü servis ve tedarik sürecinde garantili hizmetler sunmaktadır
@@ -91,13 +95,13 @@
         <p>Sipariş ve Servis talepleri için <a href="{{route('contact')}}">bize ulaşın.</a></p>
         <p>Yapılan çalışmalardan haberdar olmak isterseniz <a href="javascript:void(0)">Referanslar sayfamıza göz
             atabilirsiniz.</a></p>
-        <div class="text-center d-none d-lg-inline" style="position:absolute;right: 0;top: 0">
-          <img class="flex-shrink-0" style="width: 70px" src="{{asset('storage/assets/img/logo.png')}}"
+        <div class="text-center d-none d-md-inline" style="position:absolute;right: 0;top: 0">
+          <img class="flex-shrink-0" src="{{asset('storage/assets/img/services/teknokale.jpg')}}"
                alt="kale-kilit">
         </div>
-        <div class="text-center d-none d-lg-inline" style="position:absolute;left: -4px;top: 12px">
-          <img class="flex-shrink-0" style="width: 103px" src="{{asset('storage/assets/img/services/kale-celik-kapi.jpg')}}"
-               alt="kale-kilit">
+        <div class="text-center d-none d-md-inline" style="position:absolute;left: 0;top: 0">
+          <img class="flex-shrink-0" src="{{asset('storage/assets/img/services/kale-celik-kapi.jpg')}}"
+               alt="teknokale">
         </div>
       </div>
     </div>

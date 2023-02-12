@@ -8,6 +8,10 @@
   <div class="container projects">
     <div class="row justify-content-center">
       <div class="col-lg-10" style="position: relative">
+        <div class="d-flex justify-content-center d-md-none">
+          <img class="" src="{{asset('storage/assets/img/services/teknokale.jpg')}}" alt="teknokale">
+          <img class="ms-2" src="{{asset('storage/assets/img/services/kale-kilit.jpg')}}" alt="kale-kilit">
+        </div>
         <p class="service-desc text-center">
           Tekno Kale @ Kale Kilit iştirakı olup Bodrum bölge bayisi ve yetkili servisidir
           Anahtarcılık hizmetleri kapsamında aşağıda listelenen hizmetleri garantili şekilde
@@ -118,12 +122,12 @@
         <p>Sipariş ve Servis talepleri için <a href="{{route('contact')}}">bize ulaşın.</a></p>
         <p>Yapılan çalışmalardan haberdar olmak isterseniz <a href="javascript:void(0)">Referanslar sayfamıza göz
             atabilirsiniz.</a></p>
-        <div class="text-center d-none d-lg-inline" style="position:absolute;right: 0;top: 0">
-          <img class="flex-shrink-0" style="width: 70px" src="{{asset('storage/assets/img/logo.png')}}"
-               alt="kale-kilit">
+        <div class="text-center d-none d-md-inline" style="position:absolute;right: 0;top: 0">
+          <img class="flex-shrink-0" src="{{asset('storage/assets/img/services/teknokale.jpg')}}"
+               alt="teknokale">
         </div>
-        <div class="text-center d-none d-lg-inline" style="position:absolute;left: 0;top: 6px">
-          <img class="flex-shrink-0" style="width: 100px" src="{{asset('storage/assets/img/services/kale-kilit.jpg')}}"
+        <div class="text-center d-none d-md-inline" style="position:absolute;left: 0;top: 0">
+          <img class="flex-shrink-0" src="{{asset('storage/assets/img/services/kale-kilit.jpg')}}"
                alt="kale-kilit">
         </div>
       </div>
