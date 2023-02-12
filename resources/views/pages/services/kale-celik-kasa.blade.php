@@ -5,26 +5,20 @@
   <!-- Primary Meta Tags -->
   <title>Kale Çelik Kasa Hizmetleri - Teknokale Bodrum</title>
   <meta name="title" content="Kale Çelik Kasa Hizmetleri - Teknokale Bodrum">
-  <meta name="description" content="Tekno Kale @ Kale Çelik Kasa iştirakı olup Bodrum Yetkili Bayi ve Yetkili Servisidir.
-            Kale Çelik kasaların yetkili elden Satışı Nakliyesi ve Onarım hizmetlerini Garantili olarak sunmaktadır.
-            Kale Çelik Kasaya ait verdiğimiz hizmetler aşağıda bilginize sunulmuştur;">
+  <meta name="description" content="Tekno Kale @ Kale Çelik Kasa iştirakı olup Bodrum Yetkili Bayi ve Yetkili Servisidir.Kale Çelik kasaların yetkili elden Satışı Nakliyesi ve Onarım hizmetlerini Garantili olarak sunmaktadır.Kale Çelik Kasaya ait verdiğimiz hizmetler aşağıda bilginize sunulmuştur;">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://teknokalebodrum.com/">
   <meta property="og:title" content="Kale Çelik Kasa Hizmetleri - Teknokale Bodrum">
-  <meta property="og:description" content="Tekno Kale @ Kale Çelik Kasa iştirakı olup Bodrum Yetkili Bayi ve Yetkili Servisidir.
-            Kale Çelik kasaların yetkili elden Satışı Nakliyesi ve Onarım hizmetlerini Garantili olarak sunmaktadır.
-            Kale Çelik Kasaya ait verdiğimiz hizmetler aşağıda bilginize sunulmuştur;">
+  <meta property="og:description" content="Tekno Kale @ Kale Çelik Kasa iştirakı olup Bodrum Yetkili Bayi ve Yetkili Servisidir.Kale Çelik kasaların yetkili elden Satışı Nakliyesi ve Onarım hizmetlerini Garantili olarak sunmaktadır.Kale Çelik Kasaya ait verdiğimiz hizmetler aşağıda bilginize sunulmuştur;">
   <meta property="og:image" content="">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="http://teknokalebodrum.com/">
   <meta property="twitter:title" content="Kale Çelik Kasa Hizmetleri - Teknokale Bodrum">
-  <meta property="twitter:description" content="Tekno Kale @ Kale Çelik Kasa iştirakı olup Bodrum Yetkili Bayi ve Yetkili Servisidir.
-            Kale Çelik kasaların yetkili elden Satışı Nakliyesi ve Onarım hizmetlerini Garantili olarak sunmaktadır.
-            Kale Çelik Kasaya ait verdiğimiz hizmetler aşağıda bilginize sunulmuştur;">
+  <meta property="twitter:description" content="Tekno Kale @ Kale Çelik Kasa iştirakı olup Bodrum Yetkili Bayi ve Yetkili Servisidir.Kale Çelik kasaların yetkili elden Satışı Nakliyesi ve Onarım hizmetlerini Garantili olarak sunmaktadır.Kale Çelik Kasaya ait verdiğimiz hizmetler aşağıda bilginize sunulmuştur;">
   <meta property="twitter:image" content="">
 @endsection
 

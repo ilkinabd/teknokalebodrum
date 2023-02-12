@@ -6,29 +6,20 @@
   <!-- Primary Meta Tags -->
   <title>Kale Kilit Hizmetleri - Teknokale Bodrum</title>
   <meta name="title" content="Kale Kilit Hizmetleri - Teknokale Bodrum">
-  <meta name="description" content="Tekno Kale @ Kale Kilit iştirakı olup Bodrum bölge bayisi ve yetkili servisidir
-            Anahtarcılık hizmetleri kapsamında aşağıda listelenen hizmetleri garantili şekilde
-            icra etmekte, müşteri memnuniyyetini en üst düzeyde tutmayı kendine hedef edinmiştir
-            Anahtarcılık hizmetlerimiz aşağıda bilginize sunulmuştur ;">
+  <meta name="description" content="Tekno Kale @ Kale Kilit iştirakı olup Bodrum bölge bayisi ve yetkili servisidir. Anahtarcılık hizmetleri kapsamında aşağıda listelenen hizmetleri garantili şekilde icra etmekte, müşteri memnuniyyetini en üst düzeyde tutmayı kendine hedef edinmiştir. Anahtarcılık hizmetlerimiz aşağıda bilginize sunulmuştur ;">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://teknokalebodrum.com/">
   <meta property="og:title" content="Kale Kilit Hizmetleri - Teknokale Bodrum">
-  <meta property="og:description" content="Tekno Kale @ Kale Kilit iştirakı olup Bodrum bölge bayisi ve yetkili servisidir
-            Anahtarcılık hizmetleri kapsamında aşağıda listelenen hizmetleri garantili şekilde
-            icra etmekte, müşteri memnuniyyetini en üst düzeyde tutmayı kendine hedef edinmiştir
-            Anahtarcılık hizmetlerimiz aşağıda bilginize sunulmuştur ;">
+  <meta property="og:description" content="Tekno Kale @ Kale Kilit iştirakı olup Bodrum bölge bayisi ve yetkili servisidir. Anahtarcılık hizmetleri kapsamında aşağıda listelenen hizmetleri garantili şekilde icra etmekte, müşteri memnuniyyetini en üst düzeyde tutmayı kendine hedef edinmiştir. Anahtarcılık hizmetlerimiz aşağıda bilginize sunulmuştur ;">
   <meta property="og:image" content="">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="http://teknokalebodrum.com/">
   <meta property="twitter:title" content="Kale Kilit Hizmetleri - Teknokale Bodrum">
-  <meta property="twitter:description" content="Tekno Kale @ Kale Kilit iştirakı olup Bodrum bölge bayisi ve yetkili servisidir
-            Anahtarcılık hizmetleri kapsamında aşağıda listelenen hizmetleri garantili şekilde
-            icra etmekte, müşteri memnuniyyetini en üst düzeyde tutmayı kendine hedef edinmiştir
-            Anahtarcılık hizmetlerimiz aşağıda bilginize sunulmuştur ;">
+  <meta property="twitter:description" content="Tekno Kale @ Kale Kilit iştirakı olup Bodrum bölge bayisi ve yetkili servisidir. Anahtarcılık hizmetleri kapsamında aşağıda listelenen hizmetleri garantili şekilde icra etmekte, müşteri memnuniyyetini en üst düzeyde tutmayı kendine hedef edinmiştir. Anahtarcılık hizmetlerimiz aşağıda bilginize sunulmuştur ;">
   <meta property="twitter:image" content="">
 @endsection
 
