@@ -28,6 +28,13 @@
   <meta property="twitter:image" content="">
 @endsection
 
+@section('breadcrumbs')
+  <ol>
+    <li><a href="/">Ana sayfa</a></li>
+    <li>Kale Çelik Kasa Hizmetleri</li>
+  </ol>
+@endsection
+
 @section('content')
   <div class="container projects">
     <div class="row justify-content-center">
