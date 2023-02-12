@@ -45,9 +45,9 @@
             icra etmekte, müşteri memnuniyyetini en üst düzeyde tutmayı kendine hedef edinmiştir
             Anahtarcılık hizmetlerimiz aşağıda bilginize sunulmuştur ;
           </p>
-          <img class="d-none d-md-inline" style="position:absolute;right: 1px;top: 10px" src="{{asset('storage/assets/img/services/teknokale.jpg')}}"
+          <img class="d-none d-md-inline" style="position:absolute;right: 6px;top: 10px" src="{{asset('storage/assets/img/services/teknokale.jpg')}}"
                alt="teknokale">
-          <img class="d-none d-md-inline" style="position:absolute;left: 1px;top: 10px" src="{{asset('storage/assets/img/services/kale-kilit.jpg')}}"
+          <img class="d-none d-md-inline" style="position:absolute;left: 6px;top: 10px" src="{{asset('storage/assets/img/services/kale-kilit.jpg')}}"
                alt="kale-kilit">
         </div>
         <div class="row gy-5 px-2">
