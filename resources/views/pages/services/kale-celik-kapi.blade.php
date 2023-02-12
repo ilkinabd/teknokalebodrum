@@ -1,8 +1,31 @@
 @extends('layouts.mainOrdinary')
 
-@section('title','Kale Çelik Kapı Bodrum Yetkili Servisi ve Yetkili Satıcısı')
+@section("meta")
+  <!-- Primary Meta Tags -->
+  <title>Kale Çelik Kapı Hizmetleri - Teknokale Bodrum</title>
+  <meta name="title" content="Kale Çelik Kapı Hizmetleri - Teknokale Bodrum">
+  <meta name="description" content="Tekno Kale @ Kale Çelik Kapı iştirakı olup Bodrum yetkili satıcısı ve yetkili servisidir
+            Kale Çelik kapıların satış sonrası her türlü servis ve tedarik sürecinde garantili hizmetler sunmaktadır
+            Kale Çelik Kapıları ait hizmetler aşağıda bilginize sunulmuştur;">
 
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://teknokalebodrum.com/">
+  <meta property="og:title" content="Kale Çelik Kapı Hizmetleri  - Teknokale Bodrum">
+  <meta property="og:description" content="Tekno Kale @ Kale Çelik Kapı iştirakı olup Bodrum yetkili satıcısı ve yetkili servisidir
+            Kale Çelik kapıların satış sonrası her türlü servis ve tedarik sürecinde garantili hizmetler sunmaktadır
+            Kale Çelik Kapıları ait hizmetler aşağıda bilginize sunulmuştur;">
+  <meta property="og:image" content="">
 
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://teknokalebodrum.com/">
+  <meta property="twitter:title" content="Kale Çelik Kapı Hizmetleri - Teknokale Bodrum">
+  <meta property="twitter:description" content="Tekno Kale @ Kale Çelik Kapı iştirakı olup Bodrum yetkili satıcısı ve yetkili servisidir
+            Kale Çelik kapıların satış sonrası her türlü servis ve tedarik sürecinde garantili hizmetler sunmaktadır
+            Kale Çelik Kapıları ait hizmetler aşağıda bilginize sunulmuştur;">
+  <meta property="twitter:image" content="">
+@endsection
 
 @section('content')
   <div class="container projects">

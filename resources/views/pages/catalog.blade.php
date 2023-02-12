@@ -1,6 +1,26 @@
 @extends('layouts.mainOrdinary')
 
-@section('title','Katalog')
+@section("meta")
+  <!-- Primary Meta Tags -->
+  <title>Katalog - Teknokale Bodrum</title>
+  <meta name="title" content="Katalog - Teknokale Bodrum">
+  <meta name="description" content="Katalog">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://teknokalebodrum.com/">
+  <meta property="og:title" content="Katalog - Teknokale Bodrum">
+  <meta property="og:description" content="Katalog">
+  <meta property="og:image" content="">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://teknokalebodrum.com/">
+  <meta property="twitter:title" content="Katalog - Teknokale Bodrum">
+  <meta property="twitter:description" content="Katalog">
+  <meta property="twitter:image" content="">
+@endsection
+
 
 @section('breadcrumbs')
   <ol>

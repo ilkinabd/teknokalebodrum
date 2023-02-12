@@ -7,6 +7,27 @@
 @endphp
 @section('title','Ürün ara')
 
+@section("meta")
+  <!-- Primary Meta Tags -->
+  <title>Ürün Ara - Teknokale Bodrum</title>
+  <meta name="title" content="Ürün Ara - Teknokale Bodrum">
+  <meta name="description" content="Ürün Ara">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://teknokalebodrum.com/">
+  <meta property="og:title" content="Ürün Ara - Teknokale Bodrum">
+  <meta property="og:description" content="Ürün Ara">
+  <meta property="og:image" content="">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://teknokalebodrum.com/">
+  <meta property="twitter:title" content="Ürün Ara - Teknokale Bodrum">
+  <meta property="twitter:description" content="Ürün Ara">
+  <meta property="twitter:image" content="">
+@endsection
+
 @section('breadcrumbs')
   <ol>
     <li><a href="/">Ana sayfa</a></li>

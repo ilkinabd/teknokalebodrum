@@ -7,6 +7,27 @@
 @endphp
 @section('title',$currentCategory['title'])
 
+@section("meta")
+  <!-- Primary Meta Tags -->
+  <title>{{$currentCategory['title']}} - Teknokale Bodrum</title>
+  <meta name="title" content="{{$currentCategory['title']}} - Teknokale Bodrum">
+  <meta name="description" content="{{$currentCategory['title']}}">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://teknokalebodrum.com/">
+  <meta property="og:title" content="{{$product['title']}} - Teknokale Bodrum">
+  <meta property="og:description" content="{{$currentCategory['title']}}">
+  <meta property="og:image" content="">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://teknokalebodrum.com/">
+  <meta property="twitter:title" content="{{$currentCategory['title']}} - Teknokale Bodrum">
+  <meta property="twitter:description" content="{{$currentCategory['title']}}">
+  <meta property="twitter:image" content="">
+@endsection
+
 @section('breadcrumbs')
   <ol>
     <li><a href="/">Ana sayfa</a></li>
