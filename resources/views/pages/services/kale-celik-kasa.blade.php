@@ -1,5 +1,6 @@
 @extends('layouts.mainOrdinary')
 
+@section('title','Kale Çelik Kasa Hizmetleri')
 @section("meta")
   <!-- Primary Meta Tags -->
   <title>Kale Çelik Kasa Hizmetleri - Teknokale Bodrum</title>

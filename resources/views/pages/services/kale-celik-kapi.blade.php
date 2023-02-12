@@ -1,5 +1,6 @@
 @extends('layouts.mainOrdinary')
 
+@section('title','Kale Çelik Kapı Hizmetleri')
 @section("meta")
   <!-- Primary Meta Tags -->
   <title>Kale Çelik Kapı Hizmetleri - Teknokale Bodrum</title>
@@ -41,9 +42,11 @@
             Kale Çelik kapıların satış sonrası her türlü servis ve tedarik sürecinde garantili hizmetler sunmaktadır
             Kale Çelik Kapıları ait hizmetler aşağıda bilginize sunulmuştur;
           </p>
-          <img class="d-none d-md-inline" style="position:absolute;right: 0;top: 10px" src="{{asset('storage/assets/img/services/teknokale.jpg')}}"
+          <img class="d-none d-md-inline" style="position:absolute;right: 0;top: 10px"
+               src="{{asset('storage/assets/img/services/teknokale.jpg')}}"
                alt="kale-kilit">
-          <img class="d-none d-md-inline" style="position:absolute;left: 0;top: 10px" src="{{asset('storage/assets/img/services/kale-celik-kapi.jpg')}}"
+          <img class="d-none d-md-inline" style="position:absolute;left: 0;top: 10px"
+               src="{{asset('storage/assets/img/services/kale-celik-kapi.jpg')}}"
                alt="teknokale">
         </div>
         <div class="row gy-5 px-2">

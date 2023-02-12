@@ -1,5 +1,7 @@
 @extends('layouts.mainOrdinary')
 
+@section('title','Katalog')
+
 @section("meta")
   <!-- Primary Meta Tags -->
   <title>Katalog - Teknokale Bodrum</title>

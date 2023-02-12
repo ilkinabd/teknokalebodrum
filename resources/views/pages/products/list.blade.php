@@ -16,7 +16,7 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://teknokalebodrum.com/">
-  <meta property="og:title" content="{{$product['title']}} - Teknokale Bodrum">
+  <meta property="og:title" content="{{$currentCategory['title']}} - Teknokale Bodrum">
   <meta property="og:description" content="{{$currentCategory['title']}}">
   <meta property="og:image" content="">
 
