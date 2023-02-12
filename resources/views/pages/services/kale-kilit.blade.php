@@ -8,28 +8,89 @@
   <div class="container projects">
     <div class="row justify-content-center">
       <div class="col-lg-10" style="position: relative">
-        <p class="my-4 service-desc">
+        <p class="service-desc text-center">
           Tekno Kale @ Kale Kilit iştirakı olup Bodrum bölge bayisi ve yetkili servisidir
           Anahtarcılık hizmetleri kapsamında aşağıda listelenen hizmetleri garantili şekilde
           icra etmekte, müşteri memnuniyyetini en üst düzeyde tutmayı kendine hedef edinmiştir
           Anahtarcılık hizmetlerimiz aşağıda bilginize sunulmuştur ;
         </p>
-        <ul class="list-group mb-4">
-          <li class="list-group-item">Anahtar Kopyalama</li>
-          <li class="list-group-item">Master ve Bölgesel Anahtar Yapımı</li>
-          <li class="list-group-item">Aracısız Fabrikadan Kilit ve Hırdavat Ürünlerinin Temini, Satışı ve Montajı</li>
-          <li class="list-group-item">Bölgesel Çilingir Servisi (Kapı ve Kasa için)<br>Bodrum Gümbet Konacık Bitez</li>
-          <li class="list-group-item">Otomat Elektrotetik, Şifrematik, Basgeç Yetkili Elden Satışı ve Montajı</li>
-          <li class="list-group-item">Kapı Yayı, Hidrolik, Bahçe Yayı ve Otomatik Kapatıcıların Satışı ve Montajı</li>
-          <li class="list-group-item">Hasarlı Kilitlerin Onarımı ve Yedek Parça Temini</li>
-          <li class="list-group-item">Kilitlenmeyen ve Kapanmayan Kapıların Onarımı <br> Kapılar İçin; Menteşe Ayarı,
-            Dil Ayarı, Eksen ve Kasnak Ayarları
-          </li>
-          <li class="list-group-item">Ekstra Güvenlikli Kilitlerin Satışı ve Montajı <br>Güvenlikli Kilitlerin Anahtar
-            Yapımı
-          </li>
-        </ul>
-        <h4 class="mb-4">Öne çıkan bazı ürünler : </h4>
+        <div class="row gy-5 px-2">
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-key"></i>
+              </div>
+              <p class="mb-0 ms-2">Anahtar Kopyalama</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-person-chalkboard"></i>
+              </div>
+              <p class="mb-0 ms-2">Master ve Bölgesel Anahtar Yapımı</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <p class="mb-0">Aracısız Fabrikadan Kilit ve Hırdavat Ürünlerinin Temini, Satışı ve Montajı</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-door-open"></i>
+              </div>
+              <p class="mb-0">Bölgesel Çilingir Servisi (Kapı ve Kasa için) Bodrum Gümbet Konacık Bitez</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-car-battery"></i>
+              </div>
+              <p class="mb-0">Otomat Elektrotetik, Şifrematik, Basgeç Yetkili Elden Satışı ve Montajı</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-door-closed"></i>
+              </div>
+              <p class="mb-0">Kapı Yayı, Hidrolik, Bahçe Yayı ve Otomatik Kapatıcıların Satışı ve Montajı</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-lock-open"></i>
+              </div>
+              <p class="mb-0">Hasarlı Kilitlerin Onarımı ve Yedek Parça Temini</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-gear"></i>
+              </div>
+              <p class="mb-0">Kilitlenmeyen ve Kapanmayan Kapıların Onarımı Kapılar İçin; Menteşe Ayarı,
+                Dil Ayarı, Eksen ve Kasnak Ayarları</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-thumbtack"></i>
+              </div>
+              <p class="mb-0">Ekstra Güvenlikli Kilitlerin Satışı ve Montajı <br>Güvenlikli Kilitlerin Anahtar
+                Yapımı</p>
+            </div>
+          </div>
+        </div>
+        <h4 class="service-product-title">Öne çıkan bazı ürünler : </h4>
         <div class="row portfolio-container mb-4">
           @foreach($products as $product)
             @if(isset(json_decode($product['images'])[0]))

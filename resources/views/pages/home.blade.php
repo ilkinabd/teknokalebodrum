@@ -6,12 +6,12 @@
 @section('services')
   @foreach($services as $service)
     <a class="col-lg-4" href="{{route("services.detail",["slug" => $service["slug"]])}}" data-aos="fade-up">
-                <span class="d-flex p-2 item align-items-center" style="border-radius: 4px">
-                  <span class="image flex-shrink-0 d-flex align-items-center"><img style="width: 100px"
-                                                                                   src="{{asset('storage/assets/img/services/' . $service['image'])}}"
-                                                                                   alt="{{$service['image']}}"></span>
-                  <span class="title px-2">{{$service['title']}}</span>
-                </span>
+      <span class="d-flex p-2 item align-items-center" style="border-radius: 4px">
+        <span class="image flex-shrink-0 d-flex align-items-center">
+          <img style="width: 100px" src="{{asset('storage/assets/img/services/' . $service['image'])}}" alt="{{$service['image']}}" />
+        </span>
+        <span class="title px-2">{{$service['title']}}</span>
+      </span>
     </a>
   @endforeach
 @endsection

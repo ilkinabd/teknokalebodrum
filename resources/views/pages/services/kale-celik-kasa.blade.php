@@ -8,20 +8,69 @@
   <div class="container projects">
     <div class="row justify-content-center">
       <div class="col-lg-10" style="position: relative">
-        <p class="my-4 service-desc">
+        <p class="service-desc text-center">
           Tekno Kale @ Kale Çelik Kasa iştirakı olup Bodrum Yetkili Bayi ve Yetkili Servisidir.
           Kale Çelik kasaların yetkili elden Satışı Nakliyesi ve Onarım hizmetlerini Garantili olarak sunmaktadır.
           Kale Çelik Kasaya ait verdiğimiz hizmetler aşağıda bilginize sunulmuştur;
         </p>
-        <ul class="list-group mb-4">
-          <li class="list-group-item">Aracısız Kasa Satışı ve Direkt Fabrikadan Ürün Temin Avantajı</li>
-          <li class="list-group-item">Tüm Kale Çelik Kasa Modellerine Garantili Çilingirlik Hizmeti</li>
-          <li class="list-group-item">Tüm Kasa Modelleri İçin Kurulum, Duvara veya Dolaba Montaj Hizmeti</li>
-          <li class="list-group-item">Ağır Kasalar İçin Nakliye, Eve ve Ofise Aldırma Hizmeti</li>
-          <li class="list-group-item">Kasa Boyama, Kapak Onarımı ve Kilit Sistemi Onarımı</li>
-          <li class="list-group-item">Kasalar için Anahtar Temini ve Kopyalanması</li>
-          <li class="list-group-item">İkinci El Kasa Alım Satımı (Kale Çelik Kasalar İçin)</li>
-        </ul>
+        <div class="row gy-5 px-2">
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-key"></i>
+              </div>
+              <p class="mb-0 ms-2">Aracısız Kasa Satışı ve Direkt Fabrikadan Ürün Temin Avantajı</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-person-chalkboard"></i>
+              </div>
+              <p class="mb-0 ms-2">Tüm Kale Çelik Kasa Modellerine Garantili Çilingirlik Hizmeti</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <p class="mb-0 ms-2">Tüm Kasa Modelleri İçin Kurulum, Duvara veya Dolaba Montaj Hizmeti</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-door-open"></i>
+              </div>
+              <p class="mb-0 ms-2">Ağır Kasalar İçin Nakliye, Eve ve Ofise Aldırma Hizmeti</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-car-battery"></i>
+              </div>
+              <p class="mb-0 ms-2">Kasa Boyama, Kapak Onarımı ve Kilit Sistemi Onarımı</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-door-closed"></i>
+              </div>
+              <p class="mb-0 ms-2">Kasalar için Anahtar Temini ve Kopyalanması</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-lock-open"></i>
+              </div>
+              <p class="mb-0 ms-2">İkinci El Kasa Alım Satımı (Kale Çelik Kasalar İçin)</p>
+            </div>
+          </div>
+        </div>
         <p>Yarım asrı aşan tecrübesi, kurumsal yönetimi, kaliteden taviz vermeyen üretim anlayışı, dinamik ve
           güçlü yapısı ile Kale Çelik Eşya; her geçen gün yatırımlarına hız vererek büyümeye, ulusal,
           uluslararası ve bölgesel yatırım gücüyle ülke ekonomisine ciddi katkı sağlamaya,
@@ -63,7 +112,8 @@
                alt="kale-kilit">
         </div>
         <div class="text-center d-none d-lg-inline" style="position:absolute;left: -30px;top: 0px">
-          <img class="flex-shrink-0" style="width: 138px" src="{{asset('storage/assets/img/services/kale-celik-kasa.jpg')}}"
+          <img class="flex-shrink-0" style="width: 138px"
+               src="{{asset('storage/assets/img/services/kale-celik-kasa.jpg')}}"
                alt="kale-kilit">
         </div>
       </div>

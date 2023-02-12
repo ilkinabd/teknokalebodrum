@@ -8,22 +8,62 @@
   <div class="container projects">
     <div class="row justify-content-center">
       <div class="col-lg-10" style="position: relative">
-        <p class="my-4 service-desc">
+        <p class="service-desc text-center">
           Tekno Kale @ Kale Çelik Kapı iştirakı olup Bodrum yetkili satıcısı ve yetkili servisidir
           Kale Çelik kapıların satış sonrası her türlü servis ve tedarik sürecinde garantili hizmetler sunmaktadır
           Kale Çelik Kapıları ait hizmetler aşağıda bilginize sunulmuştur;
         </p>
-        <ul class="list-group mb-4">
-          <li class="list-group-item">Yüksek Güvenlik Kilit Değişimi ve Anahtar Tedariği</li>
-          <li class="list-group-item">Yüksek Güvenlik Kapı Açımı Çilingir Servisi</li>
-          <li class="list-group-item">Çelik Kapılara Ait Tüm Aksesuarlarının Aracısız Temini ve Montajı</li>
-          <li class="list-group-item">İç ve Dış Cephe Pervaz ve Panel Değişimleri</li>
-          <li class="list-group-item">Kapı Revizesi (Boyama Kumlama Montaj ve de Montaj)</li>
-          <li class="list-group-item">Kapı Yükseltme, Conta, Süpürgelik ve Damlalık Montajı</li>
-          <li class="list-group-item">Kale Kapıların Dil Ayarı, Menteş Ayarı ve Kasnak Ayarlamaları</li>
-          <li class="list-group-item">Düzgün Kapanmayan Kapıların Onarımı ve Kilit Tamirleri</li>
-        </ul>
-        <h4 class="mb-4">Öne çıkan bazı ürünler : </h4>
+        <div class="row gy-5 px-2">
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-key"></i>
+              </div>
+              <p class="mb-0 ms-2">Yüksek Güvenlik Kilit Değişimi ve Anahtar Tedariği</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-person-chalkboard"></i>
+              </div>
+              <p class="mb-0 ms-2">Yüksek Güvenlik Kapı Açımı Çilingir Servisi</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <p class="mb-0">Çelik Kapılara Ait Tüm Aksesuarlarının Aracısız Temini ve Montajı</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-door-open"></i>
+              </div>
+              <p class="mb-0">İç ve Dış Cephe Pervaz ve Panel Değişimleri</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-car-battery"></i>
+              </div>
+              <p class="mb-0">Kapı Revizesi (Boyama Kumlama Montaj ve de Montaj)</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-door-closed"></i>
+              </div>
+              <p class="mb-0">Kapı Yükseltme, Conta, Süpürgelik ve Damlalık Montajı</p>
+            </div>
+          </div>
+        </div>
+        <h4 class="service-product-title">Öne çıkan bazı ürünler : </h4>
         <div class="row portfolio-container mb-4">
           @foreach($products as $product)
             @if(isset(json_decode($product['images'])[0]))
