@@ -5,20 +5,23 @@
   <!-- Primary Meta Tags -->
   <title>Kale Çelik Kapı Hizmetleri - Teknokale Bodrum</title>
   <meta name="title" content="Kale Çelik Kapı Hizmetleri - Teknokale Bodrum">
-  <meta name="description" content="Tekno Kale @ Kale Çelik Kapı iştirakı olup Bodrum yetkili satıcısı ve yetkili servisidir.Kale Çelik kapıların satış sonrası her türlü servis ve tedarik sürecinde garantili hizmetler sunmaktadır.Kale Çelik Kapıları ait hizmetler aşağıda bilginize sunulmuştur;">
+  <meta name="description"
+        content="Tekno Kale @ Kale Çelik Kapı iştirakı olup Bodrum yetkili satıcısı ve yetkili servisidir.Kale Çelik kapıların satış sonrası her türlü servis ve tedarik sürecinde garantili hizmetler sunmaktadır.Kale Çelik Kapıları ait hizmetler aşağıda bilginize sunulmuştur;">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://teknokalebodrum.com/">
   <meta property="og:title" content="Kale Çelik Kapı Hizmetleri  - Teknokale Bodrum">
-  <meta property="og:description" content="Tekno Kale @ Kale Çelik Kapı iştirakı olup Bodrum yetkili satıcısı ve yetkili servisidir.Kale Çelik kapıların satış sonrası her türlü servis ve tedarik sürecinde garantili hizmetler sunmaktadır.Kale Çelik Kapıları ait hizmetler aşağıda bilginize sunulmuştur;">
+  <meta property="og:description"
+        content="Tekno Kale @ Kale Çelik Kapı iştirakı olup Bodrum yetkili satıcısı ve yetkili servisidir.Kale Çelik kapıların satış sonrası her türlü servis ve tedarik sürecinde garantili hizmetler sunmaktadır.Kale Çelik Kapıları ait hizmetler aşağıda bilginize sunulmuştur;">
   <meta property="og:image" content="">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="http://teknokalebodrum.com/">
   <meta property="twitter:title" content="Kale Çelik Kapı Hizmetleri - Teknokale Bodrum">
-  <meta property="twitter:description" content="Tekno Kale @ Kale Çelik Kapı iştirakı olup Bodrum yetkili satıcısı ve yetkili servisidir.Kale Çelik kapıların satış sonrası her türlü servis ve tedarik sürecinde garantili hizmetler sunmaktadır.Kale Çelik Kapıları ait hizmetler aşağıda bilginize sunulmuştur;">
+  <meta property="twitter:description"
+        content="Tekno Kale @ Kale Çelik Kapı iştirakı olup Bodrum yetkili satıcısı ve yetkili servisidir.Kale Çelik kapıların satış sonrası her türlü servis ve tedarik sürecinde garantili hizmetler sunmaktadır.Kale Çelik Kapıları ait hizmetler aşağıda bilginize sunulmuştur;">
   <meta property="twitter:image" content="">
 @endsection
 
@@ -100,6 +103,15 @@
             </div>
           </div>
         </div>
+        <p class="my-4 text-center">Yarım asrı aşan tecrübesi, kurumsal yönetimi, kaliteden taviz vermeyen üretim
+          anlayışı, dinamik ve
+          güçlü yapısı ile Kale Çelik Eşya; her geçen gün yatırımlarına hız vererek büyümeye, ulusal,
+          uluslararası ve bölgesel yatırım gücüyle ülke ekonomisine ciddi katkı sağlamaya,
+          sanayi üretiminde önemli bir rol oynamaya devam ediyor. Türkiye'de çelik kasa sektörünü
+          yaratarak yepyeni bir iş alanı yaratan ve bu konuda en çok bilinen ve üst düzey marka
+          olarak tercih edilen Kale Çelik Kasa markasıyla hem bireysel tüketici hem de
+          projelere yönelik özel çelik kasa modelleri üretiyor.
+        </p>
         <h4 class="service-product-title">Öne çıkan bazı ürünler : </h4>
         <div class="row portfolio-container mb-4">
           @foreach($products as $product)
@@ -124,10 +136,7 @@
             @endif
           @endforeach
         </div>
-        <p>Daha fazla ürün için <a href="{{route('products')}}">ürünler sayfamıza göz atın.</a></p>
-        <p>Sipariş ve Servis talepleri için <a href="{{route('contact')}}">bize ulaşın.</a></p>
-        <p>Yapılan çalışmalardan haberdar olmak isterseniz <a href="javascript:void(0)">Referanslar sayfamıza göz
-            atabilirsiniz.</a></p>
+        @include('servicesFooter')
       </div>
     </div>
   </div>

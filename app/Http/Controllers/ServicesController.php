@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Service;
 
 class ServicesController extends Controller
 {
@@ -19,6 +20,14 @@ class ServicesController extends Controller
         $products = Product::with("category")->where('service_slug', $slug)->get()->toArray();
         return view("pages.services.$slug", [
             "products" => $products
+        ]);
+    }
+
+    public function list()
+    {
+        $services   = Service::all()->toArray();
+        return view('pages.services.list', [
+            'services' => $services
         ]);
     }
 }

@@ -27,4 +27,5 @@ Route::get('/urunler/ara', [ProductsController::class, 'search'])->name('product
 Route::get('/urunler/{category}', [ProductsController::class, 'list'])->name('products.list');
 Route::get('/urunler/{category}/{product}', [ProductsController::class, 'detail'])->name('products.detail');
 Route::post('/ajax/contact', [AjaxController::class, 'contactForm'])->name('ajax.contact');
+Route::get('/hizmetler', [ServicesController::class, 'list'])->name('services.list');
 Route::get('/hizmetler/{slug}', [ServicesController::class, 'detail'])->name('services.detail');
