@@ -12,7 +12,7 @@
   <meta property="og:url" content="http://teknokalebodrum.com/">
   <meta property="og:title" content="Hizmetlerimiz - Teknokale Bodrum">
   <meta property="og:description"
-        content="nrası her türlü servis ve tedarik sürecinde garantili hizmetler sunmaktadır.Kale Çelik Kapıları ait hizmetler aşağıda bilginize sunulmuştur;">
+        content="Hizmetlerimiz">
   <meta property="og:image" content="">
 
   <!-- Twitter -->
@@ -20,7 +20,7 @@
   <meta property="twitter:url" content="http://teknokalebodrum.com/">
   <meta property="twitter:title" content="Hizmetlerimiz - Teknokale Bodrum">
   <meta property="twitter:description"
-        content="Tekno Kale @ Kale Çelik Kapı iştirakı olup Bodrum yetkili satıcısı ve yetkili servisidir.Kale Çelik kapıların satış sonrası her türlü servis ve tedarik sürecinde garantili hizmetler sunmaktadır.Kale Çelik Kapıları ait hizmetler aşağıda bilginize sunulmuştur;">
+        content="Hizmetlerimiz">
   <meta property="twitter:image" content="">
 @endsection
 
