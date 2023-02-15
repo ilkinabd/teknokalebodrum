@@ -9,23 +9,22 @@ class ServicesController extends Controller
 {
     public function detail($slug)
     {
-        $slugs = [
-            'kale-kilit',
-            'kale-celik-kapi',
-            'kale-celik-kasa'
-        ];
-        if (!in_array($slug, $slugs)) {
+        $products = Product::with("category")->where('service_slug', $slug)->get()->toArray();
+        $service  = Service::where("slug", $slug)
+            ->where('is_active', 1)
+            ->first();
+        if (!$service) {
             return abort(404);
         }
-        $products = Product::with("category")->where('service_slug', $slug)->get()->toArray();
-        return view("pages.services.$slug", [
-            "products" => $products
+        return view("pages.services.detail", [
+            "products" => $products,
+            'service'  => $service->toArray(),
         ]);
     }
 
     public function list()
     {
-        $services   = Service::all()->toArray();
+        $services = Service::all()->toArray();
         return view('pages.services.list', [
             'services' => $services
         ]);
