@@ -86,7 +86,7 @@
                           class="bi bi-zoom-in"></i></a>
                       <a
                         href="{{route('products.detail',['category'=>$currentCategory['slug'],'product'=>$product['slug']])}}"
-                        title="More Details"
+                        title="Gözat"
                         class="details-link"><i
                           class="bi bi-link-45deg"></i></a>
                     </div>

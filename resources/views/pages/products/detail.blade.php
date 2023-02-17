@@ -106,10 +106,12 @@
                 <div class="card-header">Ürün dosyaları</div>
                 <div class="card-body">
                   <div class="d-flex flex-md-row flex-column flex-lg-column">
-                    @foreach($downloads as $index => $download)
-                      <a href="{{$download['link']}}"
-                         class="d-block btn-info{{$index > 0 ? ' mt-lg-2 mt-1 mt-md-0 ms-md-1 ms-lg-0' : ''}}">{{$download['name']}}</a>
-                    @endforeach
+                    @if($downloads)
+                      @foreach($downloads as $index => $download)
+                        <a href="{{$download['link']}}"
+                           class="d-block btn-info{{$index > 0 ? ' mt-lg-2 mt-1 mt-md-0 ms-md-1 ms-lg-0' : ''}}">{{$download['name']}}</a>
+                      @endforeach
+                    @endif
                   </div>
                 </div>
               </div>
