@@ -5,8 +5,8 @@
    * @var $currentCategory array
    * @var $product array
    */
-  $images = json_decode($product['images'],true);
-  $downloads = json_decode($product['downloads'],true);
+  $images = json_decode($product['local_images'],true);
+  $downloads = json_decode($product['local_downloads'],true);
 @endphp
 @section('title',$product['product_code'].' '.$product['title'])
 
@@ -88,13 +88,13 @@
                 <div class="card-header">Ürün resimleri</div>
                 <div class="card-body">
                   <div class="current-image" id="img-container" style="max-width: 300px;">
-                    <img src="{{$images[0]}}" alt="{{$product['title']}}" class="img-fluid">
+                    <img src="{{asset('storage/'.$images[0])}}" alt="{{$product['title']}}" class="img-fluid">
                   </div>
                   <div class="thumbs d-flex align-items-center justify-between">
                     @foreach($images as $index=>$image)
                       <a href="javascript:void(0)" class="thumb"
                          @if($index > 0) style="margin-left: 8px" @endif>
-                        <img src="{{$image}}" class="img-fluid" alt="{{$product['title']}}">
+                        <img src="{{asset('storage/'.$image)}}" class="img-fluid" alt="{{$product['title']}}">
                       </a>
                     @endforeach
                   </div>
@@ -108,7 +108,7 @@
                   <div class="d-flex flex-md-row flex-column flex-lg-column">
                     @if($downloads)
                       @foreach($downloads as $index => $download)
-                        <a href="{{$download['link']}}"
+                        <a href="{{asset('storage/'.$download['link'])}}"
                            class="d-block btn-info{{$index > 0 ? ' mt-lg-2 mt-1 mt-md-0 ms-md-1 ms-lg-0' : ''}}">{{$download['name']}}</a>
                       @endforeach
                     @endif

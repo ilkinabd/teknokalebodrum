@@ -29,7 +29,7 @@
   @yield('content')
 
 </main><!-- End #main -->
-@include('footer');
+@include('footer')
 </body>
 
 </html>

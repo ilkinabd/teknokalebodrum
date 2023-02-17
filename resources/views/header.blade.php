@@ -18,6 +18,14 @@
     <nav id="navbar" class="navbar">
       <ul>
         <li><a href="{{route('home')}}">Ana sayfa</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0);"><span>Hakkımızda</span> <i
+              class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <ul>
+            <li><a href="{{route('about')}}">Biz Kimiz</a></li>
+            <li><a href="{{route('mission')}}">Misyon Vizyon</a></li>
+          </ul>
+        </li>
         <li><a href="javascript:void(0);">Hakkımızda</a></li>
         <!--          <li><a href="services.html">Hizmetlerimiz</a></li>-->
         <li><a href="/urunler" class="{{ (strpos(Route::currentRouteName(), 'products') !== false) ? 'active' : '' }}">Ürünler</a>

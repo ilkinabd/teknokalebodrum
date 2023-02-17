@@ -68,20 +68,22 @@
         </aside>
         <div class="col-lg-8">
           <form class="input-group product-search mb-3" action="{{route('products.search')}}">
-            <input type="text" class="form-control" minlength="3" maxlength="255" name="q" placeholder="Ürün ismi ve ya kodu giriniz" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <input type="text" class="form-control" minlength="3" maxlength="255" name="q"
+                   placeholder="Ürün ismi ve ya kodu giriniz" aria-label="Recipient's username"
+                   aria-describedby="button-addon2">
             <button class="btn-info" type="submit" id="button-addon2">Ürün Ara</button>
           </form>
           <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
             @foreach($currentCategory['products'] as $product)
-              @if(isset(json_decode($product['images'])[0]))
-                @php($image = json_decode($product['images'])[0])
+              @if(isset(json_decode($product['local_images'])[0]))
+                @php($image = json_decode($product['local_images'])[0])
                 <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
                   <div class="portfolio-content h-100">
-                    <img src="{{$image}}" class="img-fluid" alt="">
+                    <img src="{{asset('storage/'.$image)}}" class="img-fluid" alt="">
                     <div class="portfolio-info">
                       <h4>{{$product['product_code']}} {{$product['title']}}</h4>
-                      <a href="{{$image}}"
+                      <a href="{{asset('storage/'.$image)}}"
                          data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
                           class="bi bi-zoom-in"></i></a>
                       <a
