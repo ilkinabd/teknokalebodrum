@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\App;
 
 class Category extends Model
 {
+    use Translatable;
+
     protected $table   = 'categories';
     protected $appends = ['descendants'];
 
@@ -23,7 +26,7 @@ class Category extends Model
 
     public function children()
     {
-        return $this->subcategories()->with('children');
+        return $this->subcategories()->with('children')->with('translations');
     }
 
     public function hasChildren()
@@ -60,6 +63,6 @@ class Category extends Model
 
     public function products()
     {
-        return $this->hasMany(Product::class, 'category_id');
+        return $this->hasMany(Product::class, 'category_id')->with('translations');
     }
 }

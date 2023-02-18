@@ -1,8 +1,10 @@
+@php use App\Models\Category;use App\Models\Product; @endphp
 @extends('layouts.mainOrdinary')
 @php
   /**
-   * @var $categories array
+   * @var $categories Category[]
    * @var $currentCategory array
+   * @var $product Product
    */
 @endphp
 @section('title',$currentCategory['title'])
@@ -48,7 +50,7 @@
                           data-bs-toggle="collapse"
                           data-bs-target="#collapse-{{$category['slug']}}" aria-expanded="true"
                           aria-controls="collapse-{{$category['slug']}}">
-                    {{$category['title']}}
+                    {{$category->getTranslatedAttribute('title')}}
                   </button>
                 </h2>
                 <div id="collapse-{{$category['slug']}}" class="accordion-collapse collapse @if($isActive)show @endif"
@@ -74,7 +76,6 @@
             <button class="btn-info" type="submit" id="button-addon2">Ürün Ara</button>
           </form>
           <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
             @foreach($currentCategory['products'] as $product)
               @if(isset(json_decode($product['local_images'])[0]))
                 @php($image = json_decode($product['local_images'])[0])
@@ -82,7 +83,7 @@
                   <div class="portfolio-content h-100">
                     <img src="{{asset('storage/'.$image)}}" class="img-fluid" alt="">
                     <div class="portfolio-info">
-                      <h4>{{$product['product_code']}} {{$product['title']}}</h4>
+                      <h4>{{$product['product_code']}} {{$product->getTranslatedAttribute('title')}}</h4>
                       <a href="{{asset('storage/'.$image)}}"
                          data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
                           class="bi bi-zoom-in"></i></a>

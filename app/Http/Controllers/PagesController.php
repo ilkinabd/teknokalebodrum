@@ -13,11 +13,9 @@ class PagesController extends Controller
     public function home(): Factory|View|Application
     {
         $pageSlider = Slider::where('page', '=', 'home')->first(['slides'])->toArray();
-        $services   = Service::all()->toArray();
         $slides     = json_decode($pageSlider['slides'], true);
         return view('pages.home', [
-            'slides'   => $slides,
-            'services' => $services
+            'slides' => $slides,
         ]);
     }
 
@@ -31,5 +29,15 @@ class PagesController extends Controller
     {
         return view('pages.catalog', [
         ]);
+    }
+
+    public function about()
+    {
+        return view('pages.about');
+    }
+
+    public function mission()
+    {
+        return view('pages.mission');
     }
 }

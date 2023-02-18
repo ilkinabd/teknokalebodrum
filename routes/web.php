@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AjaxController;
+use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\ServicesController;
@@ -19,6 +20,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PagesController::class, 'home'])->name('home');
 Route::get('/iletisim', [PagesController::class, 'contact'])->name('contact');
+Route::get('/biz-kimiz', [PagesController::class, 'about'])->name('about');
+Route::get('/misyon-vizyon', [PagesController::class, 'mission'])->name('mission');
 Route::get('/katalog', [PagesController::class, 'catalog'])->name('catalog');
 Route::get('/urunler', function () {
     return redirect('urunler/silindirler');
@@ -29,3 +32,4 @@ Route::get('/urunler/{category}/{product}', [ProductsController::class, 'detail'
 Route::post('/ajax/contact', [AjaxController::class, 'contactForm'])->name('ajax.contact');
 Route::get('/hizmetler', [ServicesController::class, 'list'])->name('services.list');
 Route::get('/hizmetler/{slug}', [ServicesController::class, 'detail'])->name('services.detail');
+Route::get('/dil/{lang}', [LanguageController::class, 'change'])->name('language.change');

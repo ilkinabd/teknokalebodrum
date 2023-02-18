@@ -24,48 +24,24 @@
         </div><!-- End footer info column-->
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Faydalı linkler</h4>
+          <h4>{{__('footer.faydali_linkler')}}</h4>
           <ul>
-            <li><a href="javascript:void(0)">Ana sayfa</a></li>
-            <li><a href="javascript:void(0)">Biz kimiz</a></li>
-            <li><a href="javascript:void(0)">Hizmetlerimiz</a></li>
-            {{--            <li><a href="#">Terms of service</a></li>--}}
-            {{--            <li><a href="#">Privacy policy</a></li>--}}
+            <li><a href="javascript:void(0)">{{__('footer.ana_sayfa')}}</a></li>
+            <li><a href="javascript:void(0)">{{__('footer.biz_kimiz')}}</a></li>
+            <li><a href="javascript:void(0)">{{__('footer.hizmetlerimiz')}}</a></li>
           </ul>
         </div><!-- End footer links column-->
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hizmetlerimiz</h4>
+          <h4>{{__('footer.hizmetlerimiz')}}</h4>
           <ul>
-            <li><a href="{{route('services.detail',['slug'=>'kale-kilit'])}}">Kale Kilit</a></li>
-            <li><a href="{{route('services.detail',['slug'=>'kale-celik-kasa'])}}">Kale Çelik Kasa</a></li>
-            <li><a href="{{route('services.detail',['slug'=>'kale-celik-kapi'])}}">Kale Çelik Kapı</a></li>
-            <li><a href="{{route('services.detail',['slug'=>'kale-alarm'])}}">Kale Alarm</a></li>
+            @foreach($services as $service)
+              <li><a
+                  href="{{route('services.detail',['slug'=>'kale-kilit'])}}">{{$service->getTranslatedAttribute('seo_title')}}</a>
+              </li>
+            @endforeach
           </ul>
         </div><!-- End footer links column-->
-
-        {{--        <div class="col-lg-2 col-md-3 footer-links">--}}
-        {{--          <h4>Hic solutasetp</h4>--}}
-        {{--          <ul>--}}
-        {{--            <li><a href="#">Molestiae accusamus iure</a></li>--}}
-        {{--            <li><a href="#">Excepturi dignissimos</a></li>--}}
-        {{--            <li><a href="#">Suscipit distinctio</a></li>--}}
-        {{--            <li><a href="#">Dilecta</a></li>--}}
-        {{--            <li><a href="#">Sit quas consectetur</a></li>--}}
-        {{--          </ul>--}}
-        {{--        </div><!-- End footer links column-->--}}
-
-        {{--        <div class="col-lg-2 col-md-3 footer-links">--}}
-        {{--          <h4>Nobis illum</h4>--}}
-        {{--          <ul>--}}
-        {{--            <li><a href="#">Ipsam</a></li>--}}
-        {{--            <li><a href="#">Laudantium dolorum</a></li>--}}
-        {{--            <li><a href="#">Dinera</a></li>--}}
-        {{--            <li><a href="#">Trodelas</a></li>--}}
-        {{--            <li><a href="#">Flexo</a></li>--}}
-        {{--          </ul>--}}
-        {{--        </div><!-- End footer links column-->--}}
-
       </div>
     </div>
   </div>
@@ -76,10 +52,6 @@
         &copy; Copyright <strong><span>Teknokale bodrum</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/ -->
         Designed by <a href="javascript:void(0)">Ilkin</a>
       </div>
     </div>
@@ -107,21 +79,6 @@
 <script src="{{asset('storage/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
 <script src="{{asset('storage/assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
 <script src="{{asset('storage/assets/vendor/php-email-form/validate.js')}}"></script>
-<script type="text/javascript"
-        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'tr',
-            includedLanguages: 'tr,en,fr,de,ru',
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-        }, 'google_translate_element');
-        // const langElement = document.querySelector('.goog-te-menu-value>span:nth-of-type(1)');
-        // setTimeout(() => {
-        //     langElement.innerHTML = 'TR';
-        // }, 1000)
-    }
-</script>
 
 <!-- Template Main JS File -->
 <script src="{{asset('storage/assets/js/main.js')}}"></script>

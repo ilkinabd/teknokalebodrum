@@ -39,15 +39,10 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-9">
-          <h2 data-aos="fade-down" style="text-align: center">Bodrum yarımadasında hizmet vermekteyiz</h2>
+          <h2 data-aos="fade-down" style="text-align: center">{{__('home.bodrum_yarimadasinda_hizmet_vermekteyiz')}}</h2>
           <div class="row service-container g-3 justify-content-center">
             @yield('services')
           </div>
-          {{--          <p data-aos="fade-up">Üretim, istihdam ve ihracat rakamlarının yanı sıra dünya pazarlarındaki rekabet gücü ile--}}
-          {{--            de--}}
-          {{--            Türkiye ekonomisinin güçlü oyuncusu olan Kale Kilit’in temelleri, 1953 yılında Sadık Özgür tarafından--}}
-          {{--            atıldı.</p>--}}
-          {{--          <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">İletişime Geç</a>--}}
         </div>
       </div>
     </div>

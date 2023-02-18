@@ -13,8 +13,9 @@ class ProductsController extends Controller
 {
     public function list($category): Factory|View|Application
     {
-        $categories      = Category::with('children')->whereNull('parent_id')->get(['id', 'parent_id', 'title', 'slug'])->toArray();
-        $currentCategory = Category::with('products')->where('slug', $category)->first(['id', 'parent_id', 'title', 'slug'])->toArray();
+        /** @var Category[] $categories */
+        $categories      = Category::with('children')->with('translations')->whereNull('parent_id')->get(['id', 'parent_id', 'title', 'slug']);
+        $currentCategory = Category::with('products')->where('slug', $category)->first(['id', 'parent_id', 'title', 'slug']);
         return view('pages.products.list', [
             'categories'      => $categories,
             'currentCategory' => $currentCategory

@@ -1,17 +1,23 @@
+@php use App\Models\Service; @endphp
+@php
+  /**
+  * @var Service $service
+  */
+@endphp
 @extends('layouts.mainOrdinary')
 
-@section('title', $service['seo_title'])
+@section('title', $service->getTranslatedAttribute('seo_title'))
 @section("meta")
   <!-- Primary Meta Tags -->
-  <title>{{$service['seo_title']}} - Teknokale Bodrum</title>
-  <meta name="title" content="{{$service['seo_title']}} - Teknokale Bodrum">
+  <title>{{$service->getTranslatedAttribute('seo_title')}} - Teknokale Bodrum</title>
+  <meta name="title" content="{{$service->getTranslatedAttribute('seo_title')}} - Teknokale Bodrum">
   <meta name="description"
         content="{{$service['intro_text']}}">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{route('services.detail',['slug' => $service['slug']])}}">
-  <meta property="og:title" content="{{$service['seo_title']}}  - Teknokale Bodrum">
+  <meta property="og:title" content="{{$service->getTranslatedAttribute('seo_title')}}  - Teknokale Bodrum">
   <meta property="og:description"
         content="{{$service['intro_text']}}">
   <meta property="og:image" content="">
@@ -19,7 +25,7 @@
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="{{route('services.detail',['slug' => $service['slug']])}}">
-  <meta property="twitter:title" content="{{$service['seo_title']}} - Teknokale Bodrum">
+  <meta property="twitter:title" content="{{$service->getTranslatedAttribute('seo_title')}} - Teknokale Bodrum">
   <meta property="twitter:description"
         content="{{$service['intro_text']}}">
   <meta property="twitter:image" content="">
@@ -28,7 +34,7 @@
 @section('breadcrumbs')
   <ol>
     <li><a href="/">Ana sayfa</a></li>
-    <li>{{$service['seo_title']}}</li>
+    <li>{{$service->getTranslatedAttribute('seo_title')}}</li>
   </ol>
 @endsection
 
@@ -42,7 +48,7 @@
         </div>
         <div class="service-desc">
           <p class="text-center mb-0">
-            {{$service['intro_text']}}
+            {{$service->getTranslatedAttribute('intro_text')}}
           </p>
           <img class="d-none d-md-inline" style="position:absolute;right: 6px;top: 10px"
                src="{{asset('storage/assets/img/services/teknokale.jpg')}}"
@@ -52,14 +58,13 @@
                alt="kale-kilit-bodrum">
         </div>
         <div class="row gy-5 px-2">
-          @php($serviceList = json_decode($service['list'],true))
-          @foreach($serviceList as $item)
+          @foreach($service->items as $item)
             <div class="col-lg-4 col-md-6">
               <div class="service-item">
                 <div class="icon d-flex align-items-center justify-content-center">
                   <i class="{{$item['icon']}}"></i>
                 </div>
-                <p class="mb-0 ms-2">{{$item['title']}}</p>
+                <p class="mb-0 ms-2">{{$item->getTranslatedAttribute('title')}}</p>
               </div>
             </div>
           @endforeach
@@ -67,7 +72,7 @@
         <p class="my-4 text-center">
           {{$service['additional_text']}}
         </p>
-        <h4 class="service-product-title">Öne çıkan bazı ürünler : </h4>
+        <h4 class="service-product-title">{{__('services.one_cikan_bazi_urunler')}} : </h4>
         <div class="row portfolio-container mb-4">
           @foreach($products as $product)
             @if(isset(json_decode($product['images'])[0]))
@@ -76,7 +81,7 @@
                 <div class="portfolio-content h-100">
                   <img src="{{$image}}" class="img-fluid" alt="">
                   <div class="portfolio-info">
-                    <h4>{{$product['product_code']}} {{$product['title']}}</h4>
+                    <h4>{{$product['product_code']}} {{$product->getTranslatedAttribute('title')}}</h4>
                     <a href="{{$image}}"
                        data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
                         class="bi bi-zoom-in"></i></a>
