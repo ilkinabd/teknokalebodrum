@@ -1,9 +1,10 @@
+@php use App\Models\Category;use App\Models\Product; @endphp
 @extends('layouts.mainOrdinary')
 @php
   /**
-   * @var $categories array
-   * @var $currentCategory array
-   * @var $product array
+   * @var $categories Category[]
+   * @var $currentCategory Category
+   * @var $product Product
    */
   $images = json_decode($product['local_images'],true);
   $downloads = json_decode($product['local_downloads'],true);

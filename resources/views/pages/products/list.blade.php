@@ -3,37 +3,37 @@
 @php
   /**
    * @var $categories Category[]
-   * @var $currentCategory array
+   * @var $currentCategory Category
    * @var $product Product
    */
 @endphp
-@section('title',$currentCategory['title'])
+@section('title',$currentCategory->getTranslatedAttribute('title'))
 
 @section("meta")
   <!-- Primary Meta Tags -->
-  <title>{{$currentCategory['title']}} - Teknokale Bodrum</title>
-  <meta name="title" content="{{$currentCategory['title']}} - Teknokale Bodrum">
-  <meta name="description" content="{{$currentCategory['title']}}">
+  <title>{{$currentCategory->getTranslatedAttribute('title')}} - Teknokale Bodrum</title>
+  <meta name="title" content="{{$currentCategory->getTranslatedAttribute('title')}} - Teknokale Bodrum">
+  <meta name="description" content="{{$currentCategory->getTranslatedAttribute('title')}}">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://teknokalebodrum.com/">
-  <meta property="og:title" content="{{$currentCategory['title']}} - Teknokale Bodrum">
-  <meta property="og:description" content="{{$currentCategory['title']}}">
+  <meta property="og:title" content="{{$currentCategory->getTranslatedAttribute('title')}} - Teknokale Bodrum">
+  <meta property="og:description" content="{{$currentCategory->getTranslatedAttribute('title')}}">
   <meta property="og:image" content="">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="http://teknokalebodrum.com/">
-  <meta property="twitter:title" content="{{$currentCategory['title']}} - Teknokale Bodrum">
-  <meta property="twitter:description" content="{{$currentCategory['title']}}">
+  <meta property="twitter:title" content="{{$currentCategory->getTranslatedAttribute('title')}} - Teknokale Bodrum">
+  <meta property="twitter:description" content="{{$currentCategory->getTranslatedAttribute('title')}}">
   <meta property="twitter:image" content="">
 @endsection
 
 @section('breadcrumbs')
   <ol>
-    <li><a href="/">Ana sayfa</a></li>
-    <li>{{$currentCategory['title']}}</li>
+    <li><a href="/">{{__('header.ana_sayfa')}}</a></li>
+    <li>{{$currentCategory->getTranslatedAttribute('title')}}</li>
   </ol>
 @endsection
 @section('content')
@@ -71,9 +71,10 @@
         <div class="col-lg-8">
           <form class="input-group product-search mb-3" action="{{route('products.search')}}">
             <input type="text" class="form-control" minlength="3" maxlength="255" name="q"
-                   placeholder="Ürün ismi ve ya kodu giriniz" aria-label="Recipient's username"
+                   placeholder="{{__('home.urun_ismi_ve_ya_kodu_giriniz')}}"
+                   aria-label="{{__('home.urun_ismi_ve_ya_kodu_giriniz')}}"
                    aria-describedby="button-addon2">
-            <button class="btn-info" type="submit" id="button-addon2">Ürün Ara</button>
+            <button class="btn-info" type="submit" id="button-addon2">{{__('home.urun_ara')}}</button>
           </form>
           <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
             @foreach($currentCategory['products'] as $product)

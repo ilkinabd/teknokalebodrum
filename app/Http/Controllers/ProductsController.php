@@ -24,9 +24,9 @@ class ProductsController extends Controller
 
     public function detail($category, $product): Factory|View|Application
     {
-        $categories      = Category::with('children')->whereNull('parent_id')->get(['id', 'parent_id', 'title', 'slug'])->toArray();
-        $currentCategory = Category::with('products')->where('slug', $category)->first(['id', 'parent_id', 'title', 'slug'])->toArray();
-        $product         = Product::where('slug', $product)->first()->toArray();
+        $categories      = Category::with('children')->with('translations')->whereNull('parent_id')->get(['id', 'parent_id', 'title', 'slug']);
+        $currentCategory = Category::with('products')->with('translations')->where('slug', $category)->first(['id', 'parent_id', 'title', 'slug']);
+        $product         = Product::with('translations')->where('slug', $product)->first();
         return view('pages.products.detail', [
             'categories'      => $categories,
             'currentCategory' => $currentCategory,

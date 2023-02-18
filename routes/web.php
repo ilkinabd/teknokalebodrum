@@ -6,6 +6,7 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\ServicesController;
 use Illuminate\Support\Facades\Route;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,18 +19,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [PagesController::class, 'home'])->name('home');
-Route::get('/iletisim', [PagesController::class, 'contact'])->name('contact');
-Route::get('/biz-kimiz', [PagesController::class, 'about'])->name('about');
-Route::get('/misyon-vizyon', [PagesController::class, 'mission'])->name('mission');
-Route::get('/katalog', [PagesController::class, 'catalog'])->name('catalog');
-Route::get('/urunler', function () {
-    return redirect('urunler/silindirler');
-})->name('products');
-Route::get('/urunler/ara', [ProductsController::class, 'search'])->name('products.search');
-Route::get('/urunler/{category}', [ProductsController::class, 'list'])->name('products.list');
-Route::get('/urunler/{category}/{product}', [ProductsController::class, 'detail'])->name('products.detail');
+Route::group(['prefix'     => LaravelLocalization::setLocale(),
+              'middleware' => ['localize', 'localizationRedirect', 'localeViewPath']], function () {
+    Route::get(LaravelLocalization::transRoute('routes.home'), [PagesController::class, 'home'])->name('home');
+    Route::get(LaravelLocalization::transRoute('routes.contact'), [PagesController::class, 'contact'])->name('contact');
+    Route::get(LaravelLocalization::transRoute('routes.about'), [PagesController::class, 'about'])->name('about');
+    Route::get(LaravelLocalization::transRoute('routes.mission'), [PagesController::class, 'mission'])->name('mission');
+    Route::get(LaravelLocalization::transRoute('routes.catalog'), [PagesController::class, 'catalog'])->name('catalog');
+    Route::get(LaravelLocalization::transRoute('routes.products'), function () {
+        return redirect()->route(LaravelLocalization::transRoute('routes.products.list'), ['category' => 'silindirler']);
+    })->name('products');
+    Route::get(LaravelLocalization::transRoute('routes.search'), [ProductsController::class, 'search'])->name('products.search');
+    Route::get(LaravelLocalization::transRoute('routes.products.list'), [ProductsController::class, 'list'])->name('products.list');
+    Route::get(LaravelLocalization::transRoute('routes.products.detail'), [ProductsController::class, 'detail'])->name('products.detail');
+    Route::get(LaravelLocalization::transRoute('routes.services.list'), [ServicesController::class, 'list'])->name('services.list');
+    Route::get(LaravelLocalization::transRoute('routes.services.detail'), [ServicesController::class, 'detail'])->name('services.detail');
+    // Route::get('/dil/{lang}', [LanguageController::class, 'change'])->name('language.change');
+});
 Route::post('/ajax/contact', [AjaxController::class, 'contactForm'])->name('ajax.contact');
-Route::get('/hizmetler', [ServicesController::class, 'list'])->name('services.list');
-Route::get('/hizmetler/{slug}', [ServicesController::class, 'detail'])->name('services.detail');
-Route::get('/dil/{lang}', [LanguageController::class, 'change'])->name('language.change');

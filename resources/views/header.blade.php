@@ -4,7 +4,8 @@
 /**
 * @var Service[] $services
 */
-
+$key = array_search(App::getLocale(),array_column($languages,'code'));
+$currentLang = $languages[$key];
 @endphp
   <!-- ======= Header ======= -->
 <header id="header" class="header d-flex align-items-center">
@@ -34,7 +35,7 @@
           </ul>
         </li>
         <!--          <li><a href="services.html">Hizmetlerimiz</a></li>-->
-        <li><a href="/urunler"
+        <li><a href="{{route('products.list',['category'=>'silindirler'])}}"
                class="{{ (strpos(Route::currentRouteName(), 'products') !== false) ? 'active' : '' }}">{{__('header.urunler')}}</a>
         </li>
         <li><a href="{{route('catalog')}}"
@@ -53,13 +54,17 @@
         <li><a href="{{route('contact')}}"
                class="{{ (strpos(Route::currentRouteName(), 'contact') !== false) ? 'active' : '' }}">{{__('header.iletisim')}}</a>
         </li>
-        <li class="dropdown"><a href="javascript:void(0)"><span>{{mb_strtoupper(App::getLocale())}}</span>
+        <li class="dropdown"><a class="d-flex justify-content-start" href="javascript:void(0)"><img
+              style="width: 20px"
+              src="{{asset('storage/assets/img/flags/'.$currentLang['flag'])}}"
+              alt="{{$currentLang['title']}}}"><span class="ms-2">{{$currentLang['title']}}</span>
             <i
               class="bi bi-chevron-down dropdown-indicator"></i></a>
           <ul>
             @foreach($languages as $lang)
               @if($lang['code'] !== App::getLocale())
-                <li><a href="{{route('language.change',['lang'=>$lang['code']])}}" class="d-flex justify-content-start"><img
+                <li><a href="{{ LaravelLocalization::getLocalizedURL($lang['code'], null, [], true) }}"
+                       class="d-flex justify-content-start"><img
                       style="width: 20px"
                       src="{{asset('storage/assets/img/flags/'.$lang['flag'])}}"
                       alt="{{$lang['title']}}}"><span
