@@ -12,12 +12,9 @@ $currentLang = $languages[$key];
   <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
     <a href="{{route('home')}}" class="logo d-flex align-items-center">
-      <img src="{{asset('storage/assets/img/logo.png')}}" style="width: 32px" alt="">
-      <div style="line-height: 12px">
-        <h1>Teknokale</h1>
+      <img src="{{asset('storage/assets/img/logo.jpg')}}" alt="">
         <small
-          class="mb-0 d-none d-md-block">{{__('header.kilit_sistemleri_bilisim_ve_guvenlik_teknolojileri')}}</small>
-      </div>
+          class="mb-0"><b>{{__('header.kilit_sistemleri_bilisim_ve_guvenlik_teknolojileri')}}</b></small>
     </a>
 
 

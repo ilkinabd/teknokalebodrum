@@ -14,8 +14,8 @@ class ProductsController extends Controller
     public function list($category): Factory|View|Application
     {
         /** @var Category[] $categories */
-        $categories      = Category::with('children')->with('translations')->whereNull('parent_id')->get(['id', 'parent_id', 'title', 'slug']);
-        $currentCategory = Category::with('products')->where('slug', $category)->first(['id', 'parent_id', 'title', 'slug']);
+        $categories      = Category::withTranslations()->with('children')->whereNull('parent_id')->get(['id', 'parent_id', 'title', 'slug']);
+        $currentCategory = Category::withTranslations()->with('products')->where('slug', $category)->first(['id', 'parent_id', 'title', 'slug']);
         return view('pages.products.list', [
             'categories'      => $categories,
             'currentCategory' => $currentCategory
@@ -24,9 +24,9 @@ class ProductsController extends Controller
 
     public function detail($category, $product): Factory|View|Application
     {
-        $categories      = Category::with('children')->with('translations')->whereNull('parent_id')->get(['id', 'parent_id', 'title', 'slug']);
-        $currentCategory = Category::with('products')->with('translations')->where('slug', $category)->first(['id', 'parent_id', 'title', 'slug']);
-        $product         = Product::with('translations')->where('slug', $product)->first();
+        $categories      = Category::withTranslations()->with('children')->whereNull('parent_id')->get(['id', 'parent_id', 'title', 'slug']);
+        $currentCategory = Category::withTranslations()->with('products')->where('slug', $category)->first(['id', 'parent_id', 'title', 'slug']);
+        $product         = Product::withTranslations()->where('slug', $product)->first();
         return view('pages.products.detail', [
             'categories'      => $categories,
             'currentCategory' => $currentCategory,
@@ -39,8 +39,8 @@ class ProductsController extends Controller
         $request->validate([
             'q' => 'required|min:3|max:255',
         ]);
-        $categories = Category::with('children')->whereNull('parent_id')->get(['id', 'parent_id', 'title', 'slug'])->toArray();
-        $products   = Product::with('category')
+        $categories = Category::withTranslations()->with('children')->whereNull('parent_id')->get(['id', 'parent_id', 'title', 'slug'])->toArray();
+        $products   = Product::withTranslations()->with('category')
             ->orWhere('title', 'LIKE', '%' . $request->input('q') . '%')
             ->orWhere('product_code', 'LIKE', '%' . $request->input('q') . '%')
             ->simplePaginate(10)->withQueryString();

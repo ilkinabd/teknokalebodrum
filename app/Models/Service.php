@@ -12,6 +12,6 @@ class Service extends Model
 
     public function items()
     {
-        return $this->hasMany(ServiceItem::class, 'service_id');
+        return $this->hasMany(ServiceItem::class, 'service_id')->withTranslations();
     }
 }

@@ -1,12 +1,10 @@
 <?php
-
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use App\Http\Controllers\AjaxController;
-use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\ServicesController;
 use Illuminate\Support\Facades\Route;
-use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,7 +25,7 @@ Route::group(['prefix'     => LaravelLocalization::setLocale(),
     Route::get(LaravelLocalization::transRoute('routes.mission'), [PagesController::class, 'mission'])->name('mission');
     Route::get(LaravelLocalization::transRoute('routes.catalog'), [PagesController::class, 'catalog'])->name('catalog');
     Route::get(LaravelLocalization::transRoute('routes.products'), function () {
-        return redirect()->route(LaravelLocalization::transRoute('routes.products.list'), ['category' => 'silindirler']);
+        return redirect()->route(LaravelLocalization::transRoute('products.list'), ['category' => 'silindirler']);
     })->name('products');
     Route::get(LaravelLocalization::transRoute('routes.search'), [ProductsController::class, 'search'])->name('products.search');
     Route::get(LaravelLocalization::transRoute('routes.products.list'), [ProductsController::class, 'list'])->name('products.list');

@@ -3,9 +3,9 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\App;
+use Mcamara\LaravelLocalization\Interfaces\LocalizedUrlRoutable;
 
-class Category extends Model
+class Category extends Model implements LocalizedUrlRoutable
 {
     use Translatable;
 
@@ -26,7 +26,7 @@ class Category extends Model
 
     public function children()
     {
-        return $this->subcategories()->with('children')->with('translations');
+        return $this->subcategories()->with('children')->withTranslations();
     }
 
     public function hasChildren()
@@ -64,5 +64,10 @@ class Category extends Model
     public function products()
     {
         return $this->hasMany(Product::class, 'category_id')->with('translations');
+    }
+
+    public function getLocalizedRouteKey($locale)
+    {
+        // TODO: Implement getLocalizedRouteKey() method.
     }
 }

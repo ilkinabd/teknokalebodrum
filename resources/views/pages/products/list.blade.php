@@ -69,7 +69,7 @@
           </div>
         </aside>
         <div class="col-lg-8">
-          <form class="input-group product-search mb-3" action="{{route('products.search')}}">
+          <form class="input-group product-search mb-3 mt-3 mt-lg-0" action="{{route('products.search')}}">
             <input type="text" class="form-control" minlength="3" maxlength="255" name="q"
                    placeholder="{{__('home.urun_ismi_ve_ya_kodu_giriniz')}}"
                    aria-label="{{__('home.urun_ismi_ve_ya_kodu_giriniz')}}"

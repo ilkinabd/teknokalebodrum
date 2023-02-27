@@ -70,7 +70,7 @@
           @endforeach
         </div>
         <p class="my-4 text-center">
-          {{$service['additional_text']}}
+          {{$service->getTranslatedAttribute('additional_text')}}
         </p>
         <h4 class="service-product-title">{{__('services.one_cikan_bazi_urunler')}} : </h4>
         <div class="row portfolio-container mb-4">

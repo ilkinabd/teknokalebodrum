@@ -33,7 +33,7 @@
 <body>
 @include('header')
 <!-- ======= Hero Section ======= -->
-<section id="hero" class="hero" style="background-image: url('{{asset('storage/assets/img/kale-og.jpg')}}');">
+<section id="hero" class="hero">
 
   <div class="info d-flex align-items-center">
     <div class="container">

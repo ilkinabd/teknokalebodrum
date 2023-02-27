@@ -9,6 +9,7 @@ use App\Models\Service;
 use App\Models\ServiceItem;
 use App\Models\Translation;
 use Illuminate\Console\Command;
+use Illuminate\Support\Str;
 use Stichoza\GoogleTranslate\GoogleTranslate;
 
 class TranslateTable extends Command
@@ -117,11 +118,20 @@ class TranslateTable extends Command
     private function translateServices()
     {
         $languages = Language::all()->toArray();
-        Service::chunk(50, function ($services) use ($languages) {
+        Service::where('id', '=', 4)->chunk(50, function ($services) use ($languages) {
             $translations = [];
             foreach ($services as $service) {
                 foreach ($languages as $language) {
                     if ($language['code'] !== 'tr') {
+//                        $value = GoogleTranslate::trans($service->slug, $language['code'], 'tr');
+//                        echo "translating service[{$service->id}]:title to {$language['code']} $service->slug | " . Str::slug($value) . "\n";
+//                        $translations[] = [
+//                            'related_id'     => $service->id,
+//                            'related_column' => 'slug',
+//                            'related_table'  => 'services',
+//                            'lang_code'      => $language['code'],
+//                            'value'          => Str::slug($value)
+//                        ];
                         $value = GoogleTranslate::trans($service->title, $language['code'], 'tr');
                         echo "translating service[{$service->id}]:title to {$language['code']} $service->title | $value\n";
                         $translations[] = [
@@ -174,7 +184,7 @@ class TranslateTable extends Command
     private function translateServiceItems()
     {
         $languages = Language::all()->toArray();
-        ServiceItem::chunk(50, function ($serviceItems) use ($languages) {
+        ServiceItem::where('service_id', '=', 4)->chunk(50, function ($serviceItems) use ($languages) {
             $translations = [];
             foreach ($serviceItems as $serviceItem) {
                 foreach ($languages as $language) {
