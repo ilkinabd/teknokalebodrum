@@ -4,7 +4,7 @@ return [
     'home'            => '',
     'contact'         => 'kommunikaciya',
     'about'           => 'kto-my',
-    'mission'         => 'videnie-missii',
+    'references'         => 'videnie-missii',
     'catalog'         => 'katalog',
     'products'        => 'produkty',
     'products.search' => 'prodykty/poisk',

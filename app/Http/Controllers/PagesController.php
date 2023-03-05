@@ -36,8 +36,8 @@ class PagesController extends Controller
         return view('pages.about');
     }
 
-    public function mission()
+    public function references()
     {
-        return view('pages.mission');
+        return view('pages.references');
     }
 }

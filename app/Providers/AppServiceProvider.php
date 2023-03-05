@@ -29,6 +29,6 @@ class AppServiceProvider extends ServiceProvider
         //
         View::share("languages", Language::all()->toArray());
 
-        View::share("services", Service::withTranslations()->get());
+        View::share("services", Service::withTranslations()->orderBy('order_column')->get());
     }
 }

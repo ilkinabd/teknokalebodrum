@@ -14,7 +14,8 @@ $currentLang = $languages[$key];
     <a href="{{route('home')}}" class="logo d-flex align-items-center">
       <img src="{{asset('storage/assets/img/logo.jpg')}}" alt="">
         <small
-          class="mb-0"><b>{{__('header.kilit_sistemleri_bilisim_ve_guvenlik_teknolojileri')}}</b></small>
+          class="mb-0 text-center" style="font-size: 12px"><b>{{__('header.kilit_sistemleri_bilisim_ve_guvenlik_teknolojileri')}}</b>
+          <br>Bodrum</small>
     </a>
 
 
@@ -27,8 +28,8 @@ $currentLang = $languages[$key];
           <a href="javascript:void(0);"><span>{{__('header.hakkimizda')}}</span> <i
               class="bi bi-chevron-down dropdown-indicator"></i></a>
           <ul>
-            <li><a href="{{route('about')}}">{{__('header.biz_kimiz')}}</a></li>
-            <li><a href="{{route('mission')}}">{{__('header.misyon_vizyon')}}</a></li>
+            <li><a href="{{route('about')}}" class="text-uppercase">{{__('header.biz_kimiz')}}</a></li>
+            <li><a href="{{route('references')}}" class="text-uppercase">{{__('header.referanslar')}}</a></li>
           </ul>
         </li>
         <!--          <li><a href="services.html">Hizmetlerimiz</a></li>-->
@@ -42,8 +43,8 @@ $currentLang = $languages[$key];
               class="bi bi-chevron-down dropdown-indicator"></i></a>
           <ul>
             @foreach($services as $service)
-              <li><a
-                  href="{{route('services.detail',['slug'=>$service->slug])}}">{{$service->getTranslatedAttribute('seo_title')}}</a>
+              <li><a class="text-uppercase"
+                  href="{{route('services.detail',['slug'=>$service->slug])}}">{{$service->getTranslatedAttribute('menu_title')}}</a>
               </li>
             @endforeach
           </ul>

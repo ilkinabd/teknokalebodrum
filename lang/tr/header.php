@@ -2,11 +2,11 @@
 
 
 return [
-    'kilit_sistemleri_bilisim_ve_guvenlik_teknolojileri' => 'Kilit sistemleri Bilişim ve Güvenlik Teknolojileri',
+    'kilit_sistemleri_bilisim_ve_guvenlik_teknolojileri' => 'Kilit Sistemleri, Bilişim ve Güvenlik Teknolojileri',
     'ana_sayfa'                                          => 'Ana sayfa',
     'hakkimizda'                                         => 'Hakkımızda',
-    'biz_kimiz'                                          => 'Biz Kimiz',
-    'misyon_vizyon'                                      => 'Misyon Vizyon',
+    'referanslar'                                        => 'Referanslar',
+    'biz_kimiz'                                      => 'Bİz Kİmİz',
     'urunler'                                            => 'Ürünler',
     'katalog'                                            => 'Katalog',
     'hizmetlerimiz'                                      => 'Hizmetlerimiz',

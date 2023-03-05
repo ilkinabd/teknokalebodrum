@@ -4,7 +4,7 @@ return [
     'home'            => '',
     'contact'         => 'iletisim',
     'about'           => 'biz-kimiz',
-    'mission'         => 'misyon-vizyon',
+    'references'      => 'referanslar',
     'catalog'         => 'katalog',
     'products'        => 'urunler',
     'products.search' => 'urunler/ara',

@@ -3,7 +3,7 @@ return [
     'home'            => '',
     'contact'         => 'communication',
     'about'           => 'qui-sommes-nous',
-    'mission'         => 'la-vision-de-la-mission',
+    'references'         => 'la-vision-de-la-mission',
     'catalog'         => 'catalogue',
     'products'        => 'des-produits',
     'products.search' => 'produits/recherche',

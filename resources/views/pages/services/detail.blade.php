@@ -48,7 +48,7 @@
         </div>
         <div class="service-desc">
           <p class="text-center mb-0">
-            {{$service->getTranslatedAttribute('intro_text')}}
+            {!! $service->getTranslatedAttribute('intro_text') !!}
           </p>
           <img class="d-none d-md-inline" style="position:absolute;right: 6px;top: 10px"
                src="{{asset('storage/assets/img/services/teknokale.jpg')}}"
@@ -57,7 +57,7 @@
                src="{{asset('storage/assets/img/services/'.$service['image'])}}"
                alt="kale-kilit-bodrum">
         </div>
-        <div class="row gy-5 px-2">
+        <div class="row gy-5 px-2 justify-content-center">
           @foreach($service->items as $item)
             <div class="col-lg-4 col-md-6">
               <div class="service-item">
@@ -72,6 +72,7 @@
         <p class="my-4 text-center">
           {{$service->getTranslatedAttribute('additional_text')}}
         </p>
+        <p class="my-4 text-center">{{$service->getTranslatedAttribute('blog_text')}}</p>
         <h4 class="service-product-title">{{__('services.one_cikan_bazi_urunler')}} : </h4>
         <div class="row portfolio-container mb-4">
           @foreach($products as $product)

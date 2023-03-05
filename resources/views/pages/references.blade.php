@@ -1,3 +1,3 @@
 @extends('layouts.mainOrdinary')
 
-@section('title','Misyon Vizyon')
+@section('title','Referanslar')

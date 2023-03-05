@@ -22,7 +22,7 @@ Route::group(['prefix'     => LaravelLocalization::setLocale(),
     Route::get(LaravelLocalization::transRoute('routes.home'), [PagesController::class, 'home'])->name('home');
     Route::get(LaravelLocalization::transRoute('routes.contact'), [PagesController::class, 'contact'])->name('contact');
     Route::get(LaravelLocalization::transRoute('routes.about'), [PagesController::class, 'about'])->name('about');
-    Route::get(LaravelLocalization::transRoute('routes.mission'), [PagesController::class, 'mission'])->name('mission');
+    Route::get(LaravelLocalization::transRoute('routes.references'), [PagesController::class, 'references'])->name('references');
     Route::get(LaravelLocalization::transRoute('routes.catalog'), [PagesController::class, 'catalog'])->name('catalog');
     Route::get(LaravelLocalization::transRoute('routes.products'), function () {
         return redirect()->route(LaravelLocalization::transRoute('products.list'), ['category' => 'silindirler']);

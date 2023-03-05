@@ -3,6 +3,6 @@
 return [
     'faydali_linkler' => 'Useful links',
     'ana_sayfa'       => 'Home page',
-    'biz_kimiz'       => 'Who are we',
+    'referanslar'       => 'References',
     'hizmetlerimiz'   => 'Our services',
 ];
