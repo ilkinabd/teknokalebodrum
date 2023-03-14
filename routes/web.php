@@ -35,3 +35,4 @@ Route::group(['prefix'     => LaravelLocalization::setLocale(),
     // Route::get('/dil/{lang}', [LanguageController::class, 'change'])->name('language.change');
 });
 Route::post('/ajax/contact', [AjaxController::class, 'contactForm'])->name('ajax.contact');
+Route::post('/ajax/service', [AjaxController::class, 'serviceForm'])->name('ajax.service');

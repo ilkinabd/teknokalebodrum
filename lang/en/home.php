@@ -18,4 +18,5 @@ return [
     'bodrum_yarimadasinda_hizmet_vermekteyiz'             => 'We serve in Bodrum peninsula',
     'urun_ismi_ve_ya_kodu_giriniz'                        => 'Enter the product name or code',
     'one_cikan_bazi_urunler'                              => 'Some featured products',
+    'il_ilce'                                             => 'City / County'
 ];

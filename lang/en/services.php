@@ -11,4 +11,5 @@ return [
     'referanslar_sayfamiza_goz_atabilirsiniz'         => 'Check out our references page.',
     'diger_hizmetlerimizi_gormek_icin'                => 'To see our other services',
     'hizmetler_sayfamiza_goz_atin'                    => 'Check out our services page.',
+    'bayilikler'                                      => 'Dealerships'
 ];

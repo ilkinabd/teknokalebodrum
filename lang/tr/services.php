@@ -10,4 +10,5 @@ return [
     'referanslar_sayfamiza_goz_atabilirsiniz'         => 'Referanslar sayfamıza göz atabilirsiniz.',
     'diger_hizmetlerimizi_gormek_icin'                => 'Diğer hizmetlerimizi görmek için ',
     'hizmetler_sayfamiza_goz_atin'                    => 'hizmetler sayfamıza göz atın.',
+    'bayilikler'                                      => 'Bayilikler'
 ];

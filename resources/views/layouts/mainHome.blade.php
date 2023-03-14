@@ -41,7 +41,7 @@
         <div class="col-lg-9">
           <h2 data-aos="fade-down" style="text-align: center">{{__('home.bodrum_yarimadasinda_hizmet_vermekteyiz')}}</h2>
           <div class="row service-container g-3 justify-content-center">
-            <p class="text-center" style="color: white"><i><small>”Detaylar için; aradığınız hizmetin üzerine tıklayınız.“</small></i></p>
+            <p class="text-center" style="color: white;z-index: 99"><i><small>”Detaylar için; aradığınız hizmetin üzerine tıklayınız.“</small></i></p>
             @yield('services')
           </div>
         </div>

@@ -18,4 +18,5 @@ return [
     'bodrum_yarimadasinda_hizmet_vermekteyiz'             => 'Мы обслуживаем на полуострове Бодрум',
     'urun_ismi_ve_ya_kodu_giriniz'                        => 'Введите название продукта или код',
     'one_cikan_bazi_urunler'                              => 'Некоторые рекомендуемые продукты',
+    'il_ilce'                                             => 'Город / Округ'
 ];

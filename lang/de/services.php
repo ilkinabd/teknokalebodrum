@@ -11,4 +11,5 @@ return [
     'referanslar_sayfamiza_goz_atabilirsiniz'         => 'Sehen Sie sich unsere Referenzseite an.',
     'diger_hizmetlerimizi_gormek_icin'                => 'Um unsere anderen Dienstleistungen zu sehen',
     'hizmetler_sayfamiza_goz_atin'                    => 'Sehen Sie sich unsere Serviceseite an.',
+    'bayilikler'                                      => 'Händler'
 ];

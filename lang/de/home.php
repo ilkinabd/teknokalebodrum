@@ -18,4 +18,5 @@ return [
     'bodrum_yarimadasinda_hizmet_vermekteyiz'             => 'Wir servieren auf der Halbinsel Bodrum',
     'urun_ismi_ve_ya_kodu_giriniz'                        => 'Geben Sie den Produktnamen oder Code ein',
     'one_cikan_bazi_urunler'                              => 'Einige vorgestellte Produkte',
+    'il_ilce'                                             => 'Stadt / Landkreis'
 ];

@@ -11,4 +11,5 @@ return [
     'referanslar_sayfamiza_goz_atabilirsiniz'         => 'Посетите нашу страницу ссылок.',
     'diger_hizmetlerimizi_gormek_icin'                => 'Чтобы увидеть другие наши услуги',
     'hizmetler_sayfamiza_goz_atin'                    => 'Посетите нашу страницу услуг.',
+    'bayilikler'                                      => 'Дилерские центры'
 ];

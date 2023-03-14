@@ -17,4 +17,5 @@ return [
     'bodrum_yarimadasinda_hizmet_vermekteyiz'             => 'Bodrum Yarımadasında Hizmet Vermekteyiz',
     'urun_ismi_ve_ya_kodu_giriniz'                        => 'Ürün ismi veya kodu giriniz',
     'one_cikan_bazi_urunler'                              => 'Öne çıkan bazı ürünler',
+    'il_ilce'                                             => 'İl / İlçe',
 ];

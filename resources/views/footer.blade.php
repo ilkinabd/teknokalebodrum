@@ -27,12 +27,12 @@
           <h4>{{__('footer.faydali_linkler')}}</h4>
           <ul>
             <li><a href="javascript:void(0)">{{__('footer.ana_sayfa')}}</a></li>
-            <li><a href="javascript:void(0)">{{__('footer.biz_kimiz')}}</a></li>
+            <li><a href="javascript:void(0)">{{__('footer.referanslar')}}</a></li>
             <li><a href="javascript:void(0)">{{__('footer.hizmetlerimiz')}}</a></li>
           </ul>
         </div><!-- End footer links column-->
 
-        <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-3 col-md-3 footer-links">
           <h4>{{__('footer.hizmetlerimiz')}}</h4>
           <ul>
             @foreach($services as $service)
@@ -46,16 +46,16 @@
     </div>
   </div>
 
-  <div class="footer-legal text-center position-relative">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Teknokale bodrum</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Designed by <a href="javascript:void(0)">Ilkin</a>
-      </div>
-    </div>
-  </div>
+{{--  <div class="footer-legal text-center position-relative">--}}
+{{--    <div class="container">--}}
+{{--      <div class="copyright">--}}
+{{--        &copy; Copyright <strong><span>Teknokale bodrum</span></strong>. All Rights Reserved--}}
+{{--      </div>--}}
+{{--      <div class="credits">--}}
+{{--        Designed by <a href="javascript:void(0)">Ilkin</a>--}}
+{{--      </div>--}}
+{{--    </div>--}}
+{{--  </div>--}}
 
 </footer>
 <!-- End Footer -->

@@ -11,4 +11,6 @@ return [
     'referanslar_sayfamiza_goz_atabilirsiniz'         => 'Consultez notre page de références.',
     'diger_hizmetlerimizi_gormek_icin'                => 'Pour voir nos autres services',
     'hizmetler_sayfamiza_goz_atin'                    => 'Consultez notre page de services.',
+    'bayilikler'                                      => 'Concessionnaires'
+
 ];

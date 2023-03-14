@@ -118,13 +118,13 @@ class TranslateTable extends Command
     private function translateServices()
     {
         $languages = Language::all()->toArray();
-        Service::where('id', '=', 2)->chunk(50, function ($services) use ($languages) {
+        Service::chunk(50, function ($services) use ($languages) {
             $translations = [];
             foreach ($services as $service) {
                 foreach ($languages as $language) {
                     if ($language['code'] !== 'tr') {
                         $value = GoogleTranslate::trans($service->slug, $language['code'], 'tr');
-                        echo "translating service[{$service->id}]:title to {$language['code']} $service->slug | " . Str::slug($value) . "\n";
+                        echo "translating service[{$service->id}]:slug to {$language['code']} $service->slug | " . Str::slug($value) . "\n";
                         $translations[] = [
                             'related_id'     => $service->id,
                             'related_column' => 'slug',
@@ -137,6 +137,15 @@ class TranslateTable extends Command
                         $translations[] = [
                             'related_id'     => $service->id,
                             'related_column' => 'title',
+                            'related_table'  => 'services',
+                            'lang_code'      => $language['code'],
+                            'value'          => $value
+                        ];
+                        $value = GoogleTranslate::trans($service->menu_title, $language['code'], 'tr');
+                        echo "translating service[{$service->id}]:menu_title to {$language['code']} $service->menu_title | $value\n";
+                        $translations[] = [
+                            'related_id'     => $service->id,
+                            'related_column' => 'menu_title',
                             'related_table'  => 'services',
                             'lang_code'      => $language['code'],
                             'value'          => $value
