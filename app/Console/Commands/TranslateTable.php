@@ -193,13 +193,13 @@ class TranslateTable extends Command
     private function translateServiceItems()
     {
         $languages = Language::all()->toArray();
-        ServiceItem::where('service_id', '=', 2)->chunk(50, function ($serviceItems) use ($languages) {
+        ServiceItem::chunk(50, function ($serviceItems) use ($languages) {
             $translations = [];
             foreach ($serviceItems as $serviceItem) {
                 foreach ($languages as $language) {
                     if ($language['code'] !== 'tr') {
                         $value = GoogleTranslate::trans($serviceItem->title, $language['code'], 'tr');
-                        echo "translating service[$serviceItem->id]:title to {$language['code']} $serviceItem->title | $value\n";
+                        echo "translating service item[$serviceItem->id]:title to {$language['code']} $serviceItem->title | $value\n";
                         $translations[] = [
                             'related_id'     => $serviceItem->id,
                             'related_column' => 'title',
