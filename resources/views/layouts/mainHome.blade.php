@@ -7,25 +7,25 @@
 
   {{--  <title>Teknokale Bodrum - @yield('title')</title>--}}
   <!-- Primary Meta Tags -->
-  <title>Kaliteli ve Güvenli Kilitler - Teknokale Bodrum</title>
-  <meta name="title" content="Kaliteli ve Güvenli Kilitler - Teknokale Bodrum">
+  <title>Kale Kilit Bodrum Yetkili Bayi ve Yetkili Servisi - Teknokale Bodrum</title>
+  <meta name="title" content="Kale Kilit Bodrum Yetkili Bayi ve Yetkili Servisi - Teknokale Bodrum">
   <meta name="description"
-        content="Teknokale Bodrum, müşteri odaklı üretim ve hizmet misyonu ile yüksek iş ahlakı ve dürüst çalışma ilkelerini birleştirerek, kalite, güven ve garanti anlayışını dünyaya taşımak üzere 1974 yılında Türkiye'nin ilk kilit ihraç eden şirketi olmuştur.">
+        content="Tekno Kale, Bodrum şehrinde anahtar, kilit, çilingir ve güvenlik sistemleriyle ilgili hizmetler sunan bir firmadır. Evler, iş yerleri, oteller ve diğer yerlerde güvenlik ekipmanlarının kurulumu, tamiri ve değişimi gibi işlemleri gerçekleştirmektedir. Tekno Kalenin, Bodrum'da müşterilerine hizmet verirken, yüksek kaliteli ürünler ve profesyonel hizmetler sunarak güvenilir bir iş ortağı olmaya çalışır.">
   <meta name="color-scheme" content="light only">
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://teknokalebodrum.com/">
-  <meta property="og:title" content="Kaliteli ve Güvenli Kilitler - Teknokale Bodrum">
+  <meta property="og:title" content="Kale Kilit Bodrum Yetkili Bayi ve Yetkili Servisi - Teknokale Bodrum">
   <meta property="og:description"
-        content="Teknokale Bodrum, müşteri odaklı üretim ve hizmet misyonu ile yüksek iş ahlakı ve dürüst çalışma ilkelerini birleştirerek, kalite, güven ve garanti anlayışını dünyaya taşımak üzere 1974 yılında Türkiye'nin ilk kilit ihraç eden şirketi olmuştur.">
+        content="Tekno Kale, Bodrum şehrinde anahtar, kilit, çilingir ve güvenlik sistemleriyle ilgili hizmetler sunan bir firmadır. Evler, iş yerleri, oteller ve diğer yerlerde güvenlik ekipmanlarının kurulumu, tamiri ve değişimi gibi işlemleri gerçekleştirmektedir. Tekno Kalenin, Bodrum'da müşterilerine hizmet verirken, yüksek kaliteli ürünler ve profesyonel hizmetler sunarak güvenilir bir iş ortağı olmaya çalışır.">
   <meta property="og:image" content="">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="http://teknokalebodrum.com/">
-  <meta property="twitter:title" content="Kaliteli ve Güvenli Kilitler - Teknokale Bodrum">
+  <meta property="twitter:title" content="Kale Kilit Bodrum Yetkili Bayi ve Yetkili Servisi - Teknokale Bodrum">
   <meta property="twitter:description"
-        content="Teknokale Bodrum, müşteri odaklı üretim ve hizmet misyonu ile yüksek iş ahlakı ve dürüst çalışma ilkelerini birleştirerek, kalite, güven ve garanti anlayışını dünyaya taşımak üzere 1974 yılında Türkiye'nin ilk kilit ihraç eden şirketi olmuştur.">
+        content="Tekno Kale, Bodrum şehrinde anahtar, kilit, çilingir ve güvenlik sistemleriyle ilgili hizmetler sunan bir firmadır. Evler, iş yerleri, oteller ve diğer yerlerde güvenlik ekipmanlarının kurulumu, tamiri ve değişimi gibi işlemleri gerçekleştirmektedir. Tekno Kalenin, Bodrum'da müşterilerine hizmet verirken, yüksek kaliteli ürünler ve profesyonel hizmetler sunarak güvenilir bir iş ortağı olmaya çalışır.">
   <meta property="twitter:image" content="">
   @include('head')
 </head>

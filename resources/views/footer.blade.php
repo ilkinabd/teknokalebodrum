@@ -37,7 +37,7 @@
           <ul>
             @foreach($services as $service)
               <li><a
-                  href="{{route('services.detail',['slug'=>'kale-kilit'])}}">{{$service->getTranslatedAttribute('seo_title')}}</a>
+                  href="{{route('services.detail',['slug'=>$service->getTranslatedAttribute('slug')])}}">{{$service->getTranslatedAttribute('seo_title')}}</a>
               </li>
             @endforeach
           </ul>
@@ -46,16 +46,16 @@
     </div>
   </div>
 
-{{--  <div class="footer-legal text-center position-relative">--}}
-{{--    <div class="container">--}}
-{{--      <div class="copyright">--}}
-{{--        &copy; Copyright <strong><span>Teknokale bodrum</span></strong>. All Rights Reserved--}}
-{{--      </div>--}}
-{{--      <div class="credits">--}}
-{{--        Designed by <a href="javascript:void(0)">Ilkin</a>--}}
-{{--      </div>--}}
-{{--    </div>--}}
-{{--  </div>--}}
+  {{--  <div class="footer-legal text-center position-relative">--}}
+  {{--    <div class="container">--}}
+  {{--      <div class="copyright">--}}
+  {{--        &copy; Copyright <strong><span>Teknokale bodrum</span></strong>. All Rights Reserved--}}
+  {{--      </div>--}}
+  {{--      <div class="credits">--}}
+  {{--        Designed by <a href="javascript:void(0)">Ilkin</a>--}}
+  {{--      </div>--}}
+  {{--    </div>--}}
+  {{--  </div>--}}
 
 </footer>
 <!-- End Footer -->

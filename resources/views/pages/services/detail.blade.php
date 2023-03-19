@@ -86,7 +86,8 @@
               </p>
             </div>
             <div class="col-lg-6 get-started" data-aos="fade">
-              <form action="{{route('ajax.service')}}" method="post" class="php-email-form" style="background-color: #f5f6f7" >
+              <form action="{{route('ajax.service')}}" method="post" class="php-email-form"
+                    style="background-color: #f5f6f7">
                 <h3>{{__('home.iletisim_formu')}}</h3>
                 <div class="row gy-3">
 
@@ -154,31 +155,33 @@
           </div>
         @endif
 
-        <h4 class="service-product-title mb-0">{{__('services.one_cikan_bazi_urunler')}} : </h4>
-        <div class="row portfolio-container mb-4">
-          @foreach($products as $product)
-            @if(isset(json_decode($product['images'])[0]))
-              @php($image = json_decode($product['images'])[0])
-              <div class="col-lg-3 col-md-6 portfolio-item filter-remodeling mt-3 mt-lg-0">
-                <div class="portfolio-content h-100">
-                  <img src="{{$image}}" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>{{$product['product_code']}} {{$product->getTranslatedAttribute('title')}}</h4>
-                    <a href="{{$image}}"
-                       data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
-                        class="bi bi-zoom-in"></i></a>
-                    <a
-                      href="{{route('products.detail',['category'=>$product["category"]["slug"],'product'=>$product["slug"]])}}"
-                      title="More Details"
-                      class="details-link"><i
-                        class="bi bi-link-45deg"></i></a>
+        @if(count($products) > 0)
+          <h4 class="service-product-title mb-0">{{__('services.one_cikan_bazi_urunler')}} : </h4>
+          <div class="row portfolio-container mb-4">
+            @foreach($products as $product)
+              @if(isset(json_decode($product['images'])[0]))
+                @php($image = json_decode($product['images'])[0])
+                <div class="col-lg-3 col-md-6 portfolio-item filter-remodeling mt-3 mt-lg-0">
+                  <div class="portfolio-content h-100">
+                    <img src="{{$image}}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4>{{$product['product_code']}} {{$product->getTranslatedAttribute('title')}}</h4>
+                      <a href="{{$image}}"
+                         data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
+                          class="bi bi-zoom-in"></i></a>
+                      <a
+                        href="{{route('products.detail',['category'=>$product["category"]["slug"],'product'=>$product["slug"]])}}"
+                        title="More Details"
+                        class="details-link"><i
+                          class="bi bi-link-45deg"></i></a>
+                    </div>
                   </div>
-                </div>
-              </div><!-- End Projects Item -->
-            @endif
-          @endforeach
-        </div>
-        @include('servicesFooter')
+                </div><!-- End Projects Item -->
+              @endif
+            @endforeach
+          </div>
+        @endif
+        @include('servicesFooter',['productsCount' => count($products)])
       </div>
     </div>
   </div>
