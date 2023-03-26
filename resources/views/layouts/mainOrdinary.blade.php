@@ -15,7 +15,7 @@
 @include('header')
 <main id="main">
   <!-- ======= Breadcrumbs ======= -->
-  <div class="breadcrumbs d-flex align-items-center"
+  <div class="breadcrumbs d-flex align-items-center d-none d-lg-block"
        style="background-image: url('{{asset('storage/assets/img/kale-og.jpg')}}');">
     <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
@@ -24,7 +24,18 @@
       @yield('breadcrumbs')
 
     </div>
-  </div><!-- End Breadcrumbs -->
+  </div>
+  <div class="breadcrumbs d-flex align-items-center d-lg-none"
+       style="background-image: url('{{asset('storage/assets/img/kale-og-small.png')}}');">
+    <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+      <h2 class="text-center mb-0">@yield('title')</h2>
+
+      @yield('breadcrumbs')
+
+    </div>
+  </div>
+  <!-- End Breadcrumbs -->
 
   @yield('content')
 
