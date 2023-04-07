@@ -3,7 +3,7 @@
 return [
     'home'            => '',
     'contact'         => 'iletisim',
-    'about'           => 'biz-kimiz',
+    'about'           => 'hakkimizda',
     'references'      => 'referanslar',
     'catalog'         => 'katalog',
     'products'        => 'urunler',

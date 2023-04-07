@@ -155,6 +155,29 @@
           </div>
         @endif
 
+        <h4 class="service-product-title">{{__('services.bayilikler')}} : </h4>
+        <div class="franchises">
+          <div class="item">
+            <img class="img-thumbnail" src="{{asset('storage/assets/img/franchises/ahua.png')}}" alt="">
+          </div>
+          <div class="item">
+            <img class="img-thumbnail" src="{{asset('storage/assets/img/franchises/bft.png')}}" alt="">
+          </div>
+          <div class="item">
+            <img class="img-thumbnail" src="{{asset('storage/assets/img/franchises/hikvision.png')}}" alt="">
+          </div>
+          <div class="item">
+            <img class="img-thumbnail" src="{{asset('storage/assets/img/franchises/nice.png')}}" alt="">
+          </div>
+          <div class="item">
+            <img class="img-thumbnail" src="{{asset('storage/assets/img/franchises/opax.png')}}" alt="">
+          </div>
+          <div class="item">
+            <img class="img-thumbnail" src="{{asset('storage/assets/img/franchises/perktek.png')}}" alt="">
+          </div>
+        </div>
+
+
         @if(count($products) > 0)
           <h4 class="service-product-title mb-0">{{__('services.one_cikan_bazi_urunler')}} : </h4>
           <div class="row portfolio-container mb-4">

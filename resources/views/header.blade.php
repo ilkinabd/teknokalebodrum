@@ -24,14 +24,8 @@ $currentLang = $languages[$key];
     <nav id="navbar" class="navbar">
       <ul>
         <li><a href="{{route('home')}}">{{__('header.ana_sayfa')}}</a></li>
-        <li class="dropdown">
-          <a href="javascript:void(0);"><span>{{__('header.hakkimizda')}}</span> <i
-              class="bi bi-chevron-down dropdown-indicator"></i></a>
-          <ul>
-            <li><a href="{{route('about')}}" class="text-uppercase">{{__('header.biz_kimiz')}}</a></li>
-            <li><a href="{{route('references')}}" class="text-uppercase">{{__('header.referanslar')}}</a></li>
-          </ul>
-        </li>
+        <li><a href="{{route('about')}}">{{__('header.hakkimizda')}}</a></li>
+
         <!--          <li><a href="services.html">Hizmetlerimiz</a></li>-->
         <li><a href="{{route('products.list',['category'=>'silindirler'])}}"
                class="{{ (strpos(Route::currentRouteName(), 'products') !== false) ? 'active' : '' }}">{{__('header.urunler')}}</a>
