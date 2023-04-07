@@ -148,15 +148,15 @@
   <div class="container-search" style="flex-direction: column">
     <h2 class="mb-4">Ne Aramıştınız?</h2>
     <i class="mb-4"><small>”Ürün veya Hizmet ismi giriniz; .“</small></i>
-    <form action="{{__('routes.search')}}" class="search">
-      <input class="search__input" type="search" placeholder="" id="searchInput">
+    <form action="/search" class="search">
+      <input class="search__input" type="search" name="search" placeholder="" id="searchInput">
 
       <div class="search__icon-container">
         <label for="searchInput" class="search__label" aria-label="Search">
           <svg viewBox="0 0 1000 1000" title="Search"><path fill="currentColor" d="M408 745a337 337 0 1 0 0-674 337 337 0 0 0 0 674zm239-19a396 396 0 0 1-239 80 398 398 0 1 1 319-159l247 248a56 56 0 0 1 0 79 56 56 0 0 1-79 0L647 726z"/></svg>
         </label>
 
-        <button class="search__submit" aria-label="Search">
+        <button class="search__submit" aria-label="Search" type="submit">
           <svg viewBox="0 0 1000 1000" title="Search"><path fill="currentColor" d="M408 745a337 337 0 1 0 0-674 337 337 0 0 0 0 674zm239-19a396 396 0 0 1-239 80 398 398 0 1 1 319-159l247 248a56 56 0 0 1 0 79 56 56 0 0 1-79 0L647 726z"/></svg>
         </button>
       </div>

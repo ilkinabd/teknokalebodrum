@@ -27,7 +27,7 @@ Route::group(['prefix'     => LaravelLocalization::setLocale(),
     Route::get(LaravelLocalization::transRoute('routes.products'), function () {
         return redirect()->route(LaravelLocalization::transRoute('products.list'), ['category' => 'silindirler']);
     })->name('products');
-    Route::get(LaravelLocalization::transRoute('routes.search'), [ProductsController::class, 'search'])->name('products.search');
+    Route::get('search', [ProductsController::class, 'search'])->name('products.search');
     Route::get(LaravelLocalization::transRoute('routes.products.list'), [ProductsController::class, 'list'])->name('products.list');
     Route::get(LaravelLocalization::transRoute('routes.products.detail'), [ProductsController::class, 'detail'])->name('products.detail');
     Route::get(LaravelLocalization::transRoute('routes.services.list'), [ServicesController::class, 'list'])->name('services.list');
